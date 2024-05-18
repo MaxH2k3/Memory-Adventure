@@ -7,7 +7,7 @@ public class DetectionEnemy : MonoBehaviour
     public List<Collider2D> detectedCollider = new List<Collider2D>();
     private Collider2D collider;
 
-    public bool isPlayerDetected { get => detectedCollider.Count > 0; }
+    private bool isPlayerDetected { get => detectedCollider.Count > 0; }
 
     private void Awake()
     {
@@ -29,8 +29,6 @@ public class DetectionEnemy : MonoBehaviour
         if (isPlayerDetected)
         {
             Debug.Log("Enemy Detected");
-            var test = detectedCollider[0].gameObject.GetComponent<EnemyAI>();
-            Debug.Log(test.name);
         }
     }
 }

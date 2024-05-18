@@ -6,28 +6,27 @@ public class CompanisionAI : MonoBehaviour
 {
     [SerializeField] private float nextWaypointDistance = 3f; // Determine the distance between the companion and the target
     [SerializeField] public PlayerState playerState; // Get the player state
-    [SerializeField] private Transform player;
-    
+
+    private Transform target;
     private Seeker seeker;
     private Path path;
     private Rigidbody2D rb;
     private SpriteRenderer spriteRenderer;
-    private Transform target;
+    //private bool walking = false;
+    //private Coroutine moveCoroutine;
     public Animator animator;
 
     [SerializeField] private int currentWaypoint = 0;
 
     [SerializeField] public bool reachedEndOfPath { get; set; } = false;
-    private DetectionEnemy detectEnemy;
 
     private void Start()
     {
-        target = player.transform;
+        target = FindAnyObjectByType<PlayerController>().transform;
         seeker = GetComponent<Seeker>();
         rb = GetComponent<Rigidbody2D>();
         spriteRenderer = GetComponent<SpriteRenderer>();
         animator = GetComponent<Animator>();
-        detectEnemy = GetComponentInChildren<DetectionEnemy>();
 
         InvokeRepeating("CalculatePath", 0f, .5f);
     }
@@ -55,17 +54,6 @@ public class CompanisionAI : MonoBehaviour
 
     private void Update()
     {
-        //animator.SetBool("attack", true);
-
-        if(detectEnemy.isPlayerDetected)
-        {
-            target = detectEnemy.detectedCollider[0].transform;
-        }
-        else
-        {
-            target = player.transform;
-        }
-
         if (path == null || reachedEndOfPath)
         {
             return;
