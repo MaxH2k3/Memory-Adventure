@@ -278,6 +278,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveSpeed: 22
   hitVFXPrefab: {fileID: 3668113020376578696, guid: 593d7046c825a294582e697e8dee3d10, type: 3}
+  isEnemyPojectle: 0
 --- !u!114 &3732935005570015253
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -290,3 +291,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6c4854831513e724aa69e3b4feb7d6ce, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  damageAmount: 1

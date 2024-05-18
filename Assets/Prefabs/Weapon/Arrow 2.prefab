@@ -83,7 +83,7 @@ SpriteRenderer:
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1.625, y: 1.625}
+  m_Size: {x: 0.74285716, y: 0.74285716}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -184,6 +184,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6c4854831513e724aa69e3b4feb7d6ce, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  damageAmount: 1
 --- !u!114 &-704290477069208998
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -198,3 +199,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveSpeed: 5
   hitVFXPrefab: {fileID: 3668113020376578696, guid: 593d7046c825a294582e697e8dee3d10, type: 3}
+  isEnemyPojectle: 0
