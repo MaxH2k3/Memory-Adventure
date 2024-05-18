@@ -61,7 +61,6 @@ public class PlayerHealth : Singleton<PlayerHealth>
     /// <param name="hitTransform"></param>
     public void TakeDamage(int damage, Transform hitTransform)
     {
-        ScreenShakeManager.Instance.ShakeScreen();
         // If the player can't take damage, return
         if (!canTakeDamage) return;
         // Knock back the player
