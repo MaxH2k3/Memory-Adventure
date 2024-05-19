@@ -19,7 +19,7 @@ public class CompanisionHealth : MonoBehaviour
 
     private void Start()
     {
-        currentHealth = health;
+        currentHealth = companionAI.playerState.health;
     }
 
     public void TakeDamage(int damage)

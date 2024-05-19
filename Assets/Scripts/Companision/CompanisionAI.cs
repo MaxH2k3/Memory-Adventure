@@ -4,9 +4,8 @@ using UnityEngine;
 
 public class CompanisionAI : MonoBehaviour
 {
-    
-    [SerializeField] private float moveSpeed = 5f; // Determine the speed of the companion
     [SerializeField] private float nextWaypointDistance = 3f; // Determine the distance between the companion and the target
+    [SerializeField] public PlayerState playerState; // Get the player state
 
     private Transform target;
     private Seeker seeker;
@@ -55,6 +54,7 @@ public class CompanisionAI : MonoBehaviour
 
     private void Update()
     {
+        animator.SetBool("attack", true);
         if (path == null || reachedEndOfPath)
         {
             return;
@@ -75,7 +75,7 @@ public class CompanisionAI : MonoBehaviour
         // Move the companion to the target
         Vector2 direction = ((Vector2)path.vectorPath[currentWaypoint] - rb.position).normalized;
         // Calculate the force to move the companion
-        Vector2 force = moveSpeed * Time.fixedDeltaTime * direction;
+        Vector2 force = playerState.moveSpeed * Time.fixedDeltaTime * direction;
         // Move the companion
         rb.MovePosition(rb.position + force);
         // Calculate the distance between the companion and the target

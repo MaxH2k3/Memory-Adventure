@@ -1,0 +1,1263 @@
+fileFormatVersion: 2
+guid: f7de84afa694c0f4fb06db736f04c1d6
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: 62a9f0aa5b59740cfbadc7e5f9823bb0, type: 3}
+  textureImporterSettings:
+    alphaSource: 1
+    mipMapMode: 0
+    enableMipMap: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+    convertToNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+    swizzle: 50462976
+    isReadable: 0
+    streamingMipmaps: 0
+    streamingMipmapsPriority: 0
+    vTOnly: 0
+    ignoreMipmapLimit: 0
+    nPOTScale: 1
+    sRGBTexture: 1
+    spriteMode: 2
+    spriteExtrude: 1
+    spriteMeshType: 1
+    alignment: 0
+    spritePivot: {x: 0.5, y: 0.5}
+    spritePixelsToUnits: 16
+    spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+    spriteGenerateFallbackPhysicsShape: 0
+    generateCubemap: 6
+    cubemapConvolution: 0
+    seamlessCubemap: 0
+    alphaIsTransparency: 1
+    spriteTessellationDetail: -1
+    textureType: 8
+    textureShape: 1
+    singleChannelComponent: 0
+    flipbookRows: 0
+    flipbookColumns: 0
+    ignorePngGamma: 0
+    cookieMode: 0
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+    normalMap: 0
+    textureFormat: 0
+    maxTextureSize: 0
+    lightmap: 0
+    compressionQuality: 0
+    linearTexture: 0
+    grayScaleToAlpha: 0
+    rGBM: 0
+    cubemapConvolutionSteps: 0
+    cubemapConvolutionExponent: 0
+    maxTextureSizeSet: 0
+    compressionQualitySet: 0
+    textureFormatSet: 0
+    applyGammaDecoding: 0
+  previousAsepriteImporterSettings:
+    fileImportMode: 1
+    importHiddenLayers: 0
+    layerImportMode: 1
+    defaultPivotSpace: 0
+    defaultPivotAlignment: 7
+    customPivotPosition: {x: 0.5, y: 0.5}
+    mosaicPadding: 4
+    spritePadding: 0
+    generateModelPrefab: 1
+    generateAnimationClips: 1
+    addSortingGroup: 1
+    addShadowCasters: 0
+  asepriteImporterSettings:
+    fileImportMode: 1
+    importHiddenLayers: 0
+    layerImportMode: 1
+    defaultPivotSpace: 0
+    defaultPivotAlignment: 7
+    customPivotPosition: {x: 0.5, y: 0.5}
+    mosaicPadding: 4
+    spritePadding: 0
+    generateModelPrefab: 1
+    generateAnimationClips: 1
+    addSortingGroup: 1
+    addShadowCasters: 0
+  importFileNodeState: 1
+  platformSettingsDirtyTick: 638517186592833983
+  textureAssetName: 
+  singleSpriteImportData:
+  - name: 
+    originalName: 
+    pivot: {x: 0, y: 0}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    spriteID: 
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  animatedSpriteImportData:
+  - name: hot wheels remove_Frame_0
+    originalName: 
+    pivot: {x: 0.6785715, y: -3.727273}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 40
+      y: 128
+      width: 28
+      height: 22
+    spriteID: 5885a4710f488b24bbcd4e74ba080487
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 40, y: 128}
+  - name: hot wheels remove_Frame_1
+    originalName: 
+    pivot: {x: 0.904762, y: -4.8235297}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 138
+      y: 188
+      width: 21
+      height: 17
+    spriteID: 11739cf4b7cd2154e8df97e6a3d45db1
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 138, y: 188}
+  - name: hot wheels remove_Frame_2
+    originalName: 
+    pivot: {x: 0.8636365, y: -4.555556}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 108
+      y: 188
+      width: 22
+      height: 18
+    spriteID: 7fe49f3637b3d0f45a700e7b6af0fded
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 108, y: 188}
+  - name: hot wheels remove_Frame_3
+    originalName: 
+    pivot: {x: 0.6551725, y: -3.5652175}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 183
+      y: 95
+      width: 29
+      height: 23
+    spriteID: eb2a59faa8ff62544b824aba7dcdf202
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 183, y: 95}
+  - name: hot wheels remove_Frame_6
+    originalName: 
+    pivot: {x: 0.6785715, y: -3.727273}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 76
+      y: 128
+      width: 28
+      height: 22
+    spriteID: 0c279499dd2c616448544990f75af8be
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 76, y: 128}
+  - name: hot wheels remove_Frame_15
+    originalName: 
+    pivot: {x: 0.6129033, y: -3.727273}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 189
+      y: 65
+      width: 31
+      height: 22
+    spriteID: 4ad37ef13d2ca87459a4feb2b463c4b4
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 189, y: 65}
+  - name: hot wheels remove_Frame_16
+    originalName: 
+    pivot: {x: 0.6129033, y: -3.727273}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 105
+      y: 95
+      width: 31
+      height: 22
+    spriteID: c399a5da55faa974c8eb0bdea2f030a4
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 105, y: 95}
+  - name: hot wheels remove_Frame_17
+    originalName: 
+    pivot: {x: 0.6129033, y: -3.727273}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 144
+      y: 95
+      width: 31
+      height: 22
+    spriteID: 8e65e2262318f8f4095d17b7b4306046
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 144, y: 95}
+  - name: hot wheels remove_Frame_18
+    originalName: 
+    pivot: {x: 0.6333334, y: -3.727273}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 220
+      y: 95
+      width: 30
+      height: 22
+    spriteID: a3bc7873a3852b84d9e3ddb254290769
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 220, y: 95}
+  - name: hot wheels remove_Frame_19
+    originalName: 
+    pivot: {x: 0.452381, y: -3.727273}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 193
+      y: 4
+      width: 42
+      height: 22
+    spriteID: b06fa94172d56df4995a6bf87addbf6b
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 193, y: 4}
+  - name: hot wheels remove_Frame_20
+    originalName: 
+    pivot: {x: 0.452381, y: -3.5652175}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 186
+      y: 34
+      width: 42
+      height: 23
+    spriteID: 775ea2ab5997f454db67ac7dfd7c441d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 186, y: 34}
+  - name: hot wheels remove_Frame_21
+    originalName: 
+    pivot: {x: 0.452381, y: -3.4166667}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 55
+      y: 95
+      width: 42
+      height: 24
+    spriteID: 3038a25803a0afc439944ec54a3300ae
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 55, y: 95}
+  - name: hot wheels remove_Frame_22
+    originalName: 
+    pivot: {x: 0.44186053, y: -3.28}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 95
+      width: 43
+      height: 25
+    spriteID: da024700304237c419612bbd53cf5094
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 95}
+  - name: hot wheels remove_Frame_30
+    originalName: 
+    pivot: {x: 0.6785715, y: -3.727273}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 112
+      y: 128
+      width: 28
+      height: 22
+    spriteID: 3e518af821c00d94e944c7e62ff54a23
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 112, y: 128}
+  - name: hot wheels remove_Frame_31
+    originalName: 
+    pivot: {x: 0.6551725, y: -4.1000004}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 76
+      y: 159
+      width: 29
+      height: 20
+    spriteID: 60a008b0bfbaf5e49b51010054d0bce1
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 76, y: 159}
+  - name: hot wheels remove_Frame_32
+    originalName: 
+    pivot: {x: 0.73076934, y: -5.125}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 74
+      y: 188
+      width: 26
+      height: 16
+    spriteID: c8945f9acc7af9345962b0b33418f7f0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 74, y: 188}
+  - name: hot wheels remove_Frame_33
+    originalName: 
+    pivot: {x: 0.70370376, y: -4.1000004}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 218
+      y: 159
+      width: 27
+      height: 20
+    spriteID: cc66b4a0bd1fb6646b157f9f1f333c59
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 218, y: 159}
+  - name: hot wheels remove_Frame_34
+    originalName: 
+    pivot: {x: 0.925926, y: -4.8235297}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 39
+      y: 188
+      width: 27
+      height: 17
+    spriteID: 229311c0914c14644b6ca6cf54c4899d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 39, y: 188}
+  - name: hot wheels remove_Frame_35
+    originalName: 
+    pivot: {x: 0.89655167, y: -7.454546}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 167
+      y: 188
+      width: 29
+      height: 11
+    spriteID: 8618f68e55437cb48832cec4f2304da5
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 167, y: 188}
+  - name: hot wheels remove_Frame_36
+    originalName: 
+    pivot: {x: 0.89655167, y: -7.454546}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 204
+      y: 188
+      width: 29
+      height: 11
+    spriteID: 317d16ad30d918d45a7196052487bd44
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 204, y: 188}
+  - name: hot wheels remove_Frame_37
+    originalName: 
+    pivot: {x: 0.89655167, y: -7.454546}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 216
+      width: 29
+      height: 11
+    spriteID: e6581ff9073cfeb4cb07191a38b6eab0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 216}
+  - name: hot wheels remove_Frame_4
+    originalName: 
+    pivot: {x: 0.6785715, y: -3.727273}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 148
+      y: 128
+      width: 28
+      height: 22
+    spriteID: 4923ac03e4cccce4cb6f4faf8ad4b8ee
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 148, y: 128}
+  - name: hot wheels remove_Frame_5
+    originalName: 
+    pivot: {x: 0.6785715, y: -3.727273}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 184
+      y: 128
+      width: 28
+      height: 22
+    spriteID: c8ce94b7a34381045b423a9e074ca23e
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 184, y: 128}
+  - name: hot wheels remove_Frame_7
+    originalName: 
+    pivot: {x: 0.6785715, y: -3.5652175}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 128
+      width: 28
+      height: 23
+    spriteID: 0e2e2bf7d4b3c0348bb2fe87de72a472
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 128}
+  - name: hot wheels remove_Frame_8
+    originalName: 
+    pivot: {x: 0.6785715, y: -3.9047623}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 159
+      width: 28
+      height: 21
+    spriteID: 5242d9e41a83d874684a5a7b7cafa7e4
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 159}
+  - name: hot wheels remove_Frame_9
+    originalName: 
+    pivot: {x: 0.6551725, y: -4.1000004}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 113
+      y: 159
+      width: 29
+      height: 20
+    spriteID: 1f56d47ef2072804c938d1869566d33b
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 113, y: 159}
+  - name: hot wheels remove_Frame_10
+    originalName: 
+    pivot: {x: 0.6785715, y: -3.9047623}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 40
+      y: 159
+      width: 28
+      height: 21
+    spriteID: e01fd8c9ae232ba4a9d1d4bce584e766
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 40, y: 159}
+  - name: hot wheels remove_Frame_11
+    originalName: 
+    pivot: {x: 0.73076934, y: -3.5652175}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 220
+      y: 128
+      width: 26
+      height: 23
+    spriteID: 78f5214a7ee296841af9d2e7c518a9ff
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 220, y: 128}
+  - name: hot wheels remove_Frame_12
+    originalName: 
+    pivot: {x: 0.73076934, y: -3.9047623}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 150
+      y: 159
+      width: 26
+      height: 21
+    spriteID: b0cb1d97baecafb42be19d056b80e94c
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 150, y: 159}
+  - name: hot wheels remove_Frame_13
+    originalName: 
+    pivot: {x: 0.70370376, y: -4.1000004}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 188
+      width: 27
+      height: 20
+    spriteID: edbd4867af509fe45be0c4ab4f743201
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 188}
+  - name: hot wheels remove_Frame_14
+    originalName: 
+    pivot: {x: 0.73076934, y: -3.9047623}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 184
+      y: 159
+      width: 26
+      height: 21
+    spriteID: ffa193d84b2ec394c8f9038b536a9ff7
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 184, y: 159}
+  - name: hot wheels remove_Frame_24
+    originalName: 
+    pivot: {x: 0.011235977, y: -3.727273}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 4
+      width: 89
+      height: 22
+    spriteID: f5aa52d9550a94841981ff072d87069b
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 4}
+  - name: hot wheels remove_Frame_25
+    originalName: 
+    pivot: {x: -0.071428575, y: -3.727273}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 101
+      y: 4
+      width: 84
+      height: 22
+    spriteID: 60d01817e18b068448d41055943e6201
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 101, y: 4}
+  - name: hot wheels remove_Frame_26
+    originalName: 
+    pivot: {x: -0.09638558, y: -3.521739}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 34
+      width: 83
+      height: 23
+    spriteID: 78ea2356826cc1149a8bdb58883feb19
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 34}
+  - name: hot wheels remove_Frame_27
+    originalName: 
+    pivot: {x: -0.09638558, y: -3.727273}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 95
+      y: 34
+      width: 83
+      height: 22
+    spriteID: d0209bf53341bff4e9d4089c56309870
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 95, y: 34}
+  - name: hot wheels remove_Frame_28
+    originalName: 
+    pivot: {x: -0.09638558, y: -3.727273}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 65
+      width: 83
+      height: 22
+    spriteID: 61f9baffd7201cb4ca49c9a8a460bb4a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 65}
+  - name: hot wheels remove_Frame_29
+    originalName: 
+    pivot: {x: -2.7826085, y: -3.727273}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 228
+      y: 65
+      width: 23
+      height: 22
+    spriteID: ef3492b2fcbebcd44881edd6716579bc
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 228, y: 65}
+  - name: hot wheels remove_Frame_23
+    originalName: 
+    pivot: {x: 0.046511654, y: -4.8235297}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 95
+      y: 65
+      width: 86
+      height: 17
+    spriteID: 571a3811d14b5994bb13ef62ff285932
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 95, y: 65}
+  spriteSheetImportData: []
+  asepriteLayers:
+  - layerIndex: 0
+    guid: -527863035
+    name: hot wheels remove
+    layerFlags: 0
+    layerType: 0
+    blendMode: 0
+    cells:
+    - name: hot wheels remove_Frame_0
+      frameIndex: 0
+      cellRect:
+        x: 77
+        y: 82
+        width: 28
+        height: 22
+      spriteId: 5885a4710f488b24bbcd4e74ba080487
+    - name: hot wheels remove_Frame_1
+      frameIndex: 1
+      cellRect:
+        x: 77
+        y: 82
+        width: 21
+        height: 17
+      spriteId: 11739cf4b7cd2154e8df97e6a3d45db1
+    - name: hot wheels remove_Frame_2
+      frameIndex: 2
+      cellRect:
+        x: 77
+        y: 82
+        width: 22
+        height: 18
+      spriteId: 7fe49f3637b3d0f45a700e7b6af0fded
+    - name: hot wheels remove_Frame_3
+      frameIndex: 3
+      cellRect:
+        x: 77
+        y: 82
+        width: 29
+        height: 23
+      spriteId: eb2a59faa8ff62544b824aba7dcdf202
+    - name: hot wheels remove_Frame_6
+      frameIndex: 6
+      cellRect:
+        x: 77
+        y: 82
+        width: 28
+        height: 22
+      spriteId: 0c279499dd2c616448544990f75af8be
+    - name: hot wheels remove_Frame_15
+      frameIndex: 15
+      cellRect:
+        x: 77
+        y: 82
+        width: 31
+        height: 22
+      spriteId: 4ad37ef13d2ca87459a4feb2b463c4b4
+    - name: hot wheels remove_Frame_16
+      frameIndex: 16
+      cellRect:
+        x: 77
+        y: 82
+        width: 31
+        height: 22
+      spriteId: c399a5da55faa974c8eb0bdea2f030a4
+    - name: hot wheels remove_Frame_17
+      frameIndex: 17
+      cellRect:
+        x: 77
+        y: 82
+        width: 31
+        height: 22
+      spriteId: 8e65e2262318f8f4095d17b7b4306046
+    - name: hot wheels remove_Frame_18
+      frameIndex: 18
+      cellRect:
+        x: 77
+        y: 82
+        width: 30
+        height: 22
+      spriteId: a3bc7873a3852b84d9e3ddb254290769
+    - name: hot wheels remove_Frame_19
+      frameIndex: 19
+      cellRect:
+        x: 77
+        y: 82
+        width: 42
+        height: 22
+      spriteId: b06fa94172d56df4995a6bf87addbf6b
+    - name: hot wheels remove_Frame_20
+      frameIndex: 20
+      cellRect:
+        x: 77
+        y: 82
+        width: 42
+        height: 23
+      spriteId: 775ea2ab5997f454db67ac7dfd7c441d
+    - name: hot wheels remove_Frame_21
+      frameIndex: 21
+      cellRect:
+        x: 77
+        y: 82
+        width: 42
+        height: 24
+      spriteId: 3038a25803a0afc439944ec54a3300ae
+    - name: hot wheels remove_Frame_22
+      frameIndex: 22
+      cellRect:
+        x: 77
+        y: 82
+        width: 43
+        height: 25
+      spriteId: da024700304237c419612bbd53cf5094
+    - name: hot wheels remove_Frame_30
+      frameIndex: 30
+      cellRect:
+        x: 77
+        y: 82
+        width: 28
+        height: 22
+      spriteId: 3e518af821c00d94e944c7e62ff54a23
+    - name: hot wheels remove_Frame_31
+      frameIndex: 31
+      cellRect:
+        x: 77
+        y: 82
+        width: 29
+        height: 20
+      spriteId: 60a008b0bfbaf5e49b51010054d0bce1
+    - name: hot wheels remove_Frame_32
+      frameIndex: 32
+      cellRect:
+        x: 77
+        y: 82
+        width: 26
+        height: 16
+      spriteId: c8945f9acc7af9345962b0b33418f7f0
+    - name: hot wheels remove_Frame_33
+      frameIndex: 33
+      cellRect:
+        x: 77
+        y: 82
+        width: 27
+        height: 20
+      spriteId: cc66b4a0bd1fb6646b157f9f1f333c59
+    - name: hot wheels remove_Frame_34
+      frameIndex: 34
+      cellRect:
+        x: 71
+        y: 82
+        width: 27
+        height: 17
+      spriteId: 229311c0914c14644b6ca6cf54c4899d
+    - name: hot wheels remove_Frame_35
+      frameIndex: 35
+      cellRect:
+        x: 70
+        y: 82
+        width: 29
+        height: 11
+      spriteId: 8618f68e55437cb48832cec4f2304da5
+    - name: hot wheels remove_Frame_36
+      frameIndex: 36
+      cellRect:
+        x: 70
+        y: 82
+        width: 29
+        height: 11
+      spriteId: 317d16ad30d918d45a7196052487bd44
+    - name: hot wheels remove_Frame_37
+      frameIndex: 37
+      cellRect:
+        x: 70
+        y: 82
+        width: 29
+        height: 11
+      spriteId: e6581ff9073cfeb4cb07191a38b6eab0
+    - name: hot wheels remove_Frame_4
+      frameIndex: 4
+      cellRect:
+        x: 77
+        y: 82
+        width: 28
+        height: 22
+      spriteId: 4923ac03e4cccce4cb6f4faf8ad4b8ee
+    - name: hot wheels remove_Frame_5
+      frameIndex: 5
+      cellRect:
+        x: 77
+        y: 82
+        width: 28
+        height: 22
+      spriteId: c8ce94b7a34381045b423a9e074ca23e
+    - name: hot wheels remove_Frame_7
+      frameIndex: 7
+      cellRect:
+        x: 77
+        y: 82
+        width: 28
+        height: 23
+      spriteId: 0e2e2bf7d4b3c0348bb2fe87de72a472
+    - name: hot wheels remove_Frame_8
+      frameIndex: 8
+      cellRect:
+        x: 77
+        y: 82
+        width: 28
+        height: 21
+      spriteId: 5242d9e41a83d874684a5a7b7cafa7e4
+    - name: hot wheels remove_Frame_9
+      frameIndex: 9
+      cellRect:
+        x: 77
+        y: 82
+        width: 29
+        height: 20
+      spriteId: 1f56d47ef2072804c938d1869566d33b
+    - name: hot wheels remove_Frame_10
+      frameIndex: 10
+      cellRect:
+        x: 77
+        y: 82
+        width: 28
+        height: 21
+      spriteId: e01fd8c9ae232ba4a9d1d4bce584e766
+    - name: hot wheels remove_Frame_11
+      frameIndex: 11
+      cellRect:
+        x: 77
+        y: 82
+        width: 26
+        height: 23
+      spriteId: 78f5214a7ee296841af9d2e7c518a9ff
+    - name: hot wheels remove_Frame_12
+      frameIndex: 12
+      cellRect:
+        x: 77
+        y: 82
+        width: 26
+        height: 21
+      spriteId: b0cb1d97baecafb42be19d056b80e94c
+    - name: hot wheels remove_Frame_13
+      frameIndex: 13
+      cellRect:
+        x: 77
+        y: 82
+        width: 27
+        height: 20
+      spriteId: edbd4867af509fe45be0c4ab4f743201
+    - name: hot wheels remove_Frame_14
+      frameIndex: 14
+      cellRect:
+        x: 77
+        y: 82
+        width: 26
+        height: 21
+      spriteId: ffa193d84b2ec394c8f9038b536a9ff7
+    - name: hot wheels remove_Frame_24
+      frameIndex: 24
+      cellRect:
+        x: 95
+        y: 82
+        width: 89
+        height: 22
+      spriteId: f5aa52d9550a94841981ff072d87069b
+    - name: hot wheels remove_Frame_25
+      frameIndex: 25
+      cellRect:
+        x: 102
+        y: 82
+        width: 84
+        height: 22
+      spriteId: 60d01817e18b068448d41055943e6201
+    - name: hot wheels remove_Frame_26
+      frameIndex: 26
+      cellRect:
+        x: 104
+        y: 81
+        width: 83
+        height: 23
+      spriteId: 78ea2356826cc1149a8bdb58883feb19
+    - name: hot wheels remove_Frame_27
+      frameIndex: 27
+      cellRect:
+        x: 104
+        y: 82
+        width: 83
+        height: 22
+      spriteId: d0209bf53341bff4e9d4089c56309870
+    - name: hot wheels remove_Frame_28
+      frameIndex: 28
+      cellRect:
+        x: 104
+        y: 82
+        width: 83
+        height: 22
+      spriteId: 61f9baffd7201cb4ca49c9a8a460bb4a
+    - name: hot wheels remove_Frame_29
+      frameIndex: 29
+      cellRect:
+        x: 160
+        y: 82
+        width: 23
+        height: 22
+      spriteId: ef3492b2fcbebcd44881edd6716579bc
+    - name: hot wheels remove_Frame_23
+      frameIndex: 23
+      cellRect:
+        x: 92
+        y: 82
+        width: 86
+        height: 17
+      spriteId: 571a3811d14b5994bb13ef62ff285932
+    linkedCells: []
+    parentIndex: -1
+  platformSettings:
+  - name: DefaultTexturePlatform
+    overridden: 0
+    ignorePlatformSupport: 0
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
+  - name: Standalone
+    overridden: 0
+    ignorePlatformSupport: 0
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
+  - name: Server
+    overridden: 0
+    ignorePlatformSupport: 0
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
+  - name: Android
+    overridden: 0
+    ignorePlatformSupport: 0
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
+  - name: iPhone
+    overridden: 0
+    ignorePlatformSupport: 0
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
+  generatePhysicsShape: 0
+  secondarySpriteTextures: []
+  spritePackingTag: 
+  canvasSize: {x: 192, y: 192}
