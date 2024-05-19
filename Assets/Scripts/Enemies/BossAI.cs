@@ -1,13 +1,15 @@
 using Pathfinding;
 using System.Collections;
+using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
-public class CompanisionAI : MonoBehaviour
+public class BossAI : MonoBehaviour
 {
     [SerializeField] private float nextWaypointDistance = 3f; // Determine the distance between the companion and the target
-    [SerializeField] public PlayerState playerState; // Get the player state
-
-    private Transform target;
+    [SerializeField] private float moveSpeed = 2f; // Determine the speed of the companion
+    public Transform target;
+    
     private Seeker seeker;
     private Path path;
     private Rigidbody2D rb;
@@ -22,7 +24,6 @@ public class CompanisionAI : MonoBehaviour
 
     private void Start()
     {
-        target = FindAnyObjectByType<PlayerController>().transform;
         seeker = GetComponent<Seeker>();
         rb = GetComponent<Rigidbody2D>();
         spriteRenderer = GetComponent<SpriteRenderer>();
@@ -37,10 +38,10 @@ public class CompanisionAI : MonoBehaviour
     private void CalculatePath()
     {
         // If the seeker is done calculating the path
-        if (seeker.IsDone())
+        if (seeker.IsDone() && !target.IsUnityNull())
         {
             // Start the path from the current position to the target position
-            seeker.StartPath(transform.position, target.position, OnPathComplete);
+            seeker.StartPath(transform.position, target!.position, OnPathComplete);
         }
     }
     void OnPathComplete(Path p)
@@ -54,7 +55,7 @@ public class CompanisionAI : MonoBehaviour
 
     private void Update()
     {
-        animator.SetBool("attack", true);
+        //animator.SetBool("attack", true);
         if (path == null || reachedEndOfPath)
         {
             return;
@@ -63,19 +64,16 @@ public class CompanisionAI : MonoBehaviour
         if (currentWaypoint >= path.vectorPath.Count)
         {
             reachedEndOfPath = true;
-            animator.SetBool("walk", false);
             return;
-        }
-        else
+        } else
         {
             reachedEndOfPath = false;
         }
 
-        animator.SetBool("walk", true);
         // Move the companion to the target
         Vector2 direction = ((Vector2)path.vectorPath[currentWaypoint] - rb.position).normalized;
         // Calculate the force to move the companion
-        Vector2 force = playerState.moveSpeed * Time.fixedDeltaTime * direction;
+        Vector2 force = moveSpeed * Time.fixedDeltaTime * direction;
         // Move the companion
         rb.MovePosition(rb.position + force);
         // Calculate the distance between the companion and the target
@@ -84,59 +82,33 @@ public class CompanisionAI : MonoBehaviour
         // Flip the sprite
         if (direction.x < 0)
         {
-            spriteRenderer.flipX = true;
+            //spriteRenderer.flipX = true;
+            transform.rotation = Quaternion.Euler(0, 180, 0);
         } else if (direction.x > 0)
         {
-            spriteRenderer.flipX = false;
+            //spriteRenderer.flipX = false;
+            transform.rotation = Quaternion.Euler(0, 0, 0);
         }
         // If the distance between the companion and the target is less than the next waypoint distance
         if (distance < nextWaypointDistance)
             currentWaypoint++;
 
-        
+
     }
 
-    
+    public void MoveToTarget()
+    {
+        target = PlayerController.Instance.transform;
+        reachedEndOfPath = false;
+        animator.SetBool("walk", true);
+        animator.ResetTrigger("attack");
+    }
 
+    public void StopToTarget()
+    {
+        target = null;
+        reachedEndOfPath = true;
+        animator.SetBool("walk", false);
+    }
 
 }
-
-
-/*void MoveToTarget()
-    {
-        if (moveCoroutine != null) StopCoroutine(moveCoroutine);
-        moveCoroutine = StartCoroutine(MoveToTargetCoroutine());
-    }
-
-    private void Update()
-    {
-    }
-
-    IEnumerator MoveToTargetCoroutine()
-    {
-        int currentWP = 0;
-
-        while (currentWP < path.vectorPath.Count - 1)
-        {
-            Vector2 direction = ((Vector2)path.vectorPath[currentWP] - rb.position).normalized;
-            Vector2 force = direction * moveSpeed * Time.deltaTime;
-            transform.position += (Vector3)force;
-
-            float distance = Vector2.Distance(rb.position, path.vectorPath[currentWP]);
-            if (distance < nextWaypointDistance)
-                currentWP++;
-
-            if (force.x != 0)
-                if (force.x < 0)
-                    spriteRenderer.transform.localScale = new Vector3(-1, 1, 0);
-                else
-                    spriteRenderer.transform.localScale = new Vector3(1, 1, 0);
-
-            yield return null;
-
-            animator.SetFloat("walk", path.vectorPath.Count - 1 - currentWP);
-        }
-
-
-        
-    }*/

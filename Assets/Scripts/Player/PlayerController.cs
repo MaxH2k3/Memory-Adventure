@@ -92,12 +92,12 @@ public class PlayerController : Singleton<PlayerController>
         }
         playerControls.Movement.Behaviour.canceled += _ => isBoosting = false;
         //companionHealth.DetectDeath();
-        if (movement != Vector2.zero && !companionHealth.isDead)
+        /*if (movement != Vector2.zero && !companionHealth.isDead)
         {
 
             companionAI.reachedEndOfPath = false;
             companionAI.animator.SetBool("walk", true);
-        }
+        }*/
     }
 
     private void StateDirection()
