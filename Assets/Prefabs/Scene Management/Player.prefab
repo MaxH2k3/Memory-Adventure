@@ -95,6 +95,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6c4854831513e724aa69e3b4feb7d6ce, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  damageAmount: 1
 --- !u!1 &3225216637842382853
 GameObject:
   m_ObjectHideFlags: 0
@@ -335,7 +336,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 01d77c812a2cdcd4db3a7420b7a12469, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  attackButtonPressed: 0
   isAttacking: 0
 --- !u!114 &1396595098487388080
 MonoBehaviour:
@@ -430,7 +430,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: -1
+  m_SortingOrder: 0
   m_Sprite: {fileID: -1267273422, guid: 118447216e3771544ae8bbaabdb7caff, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -459,6 +459,8 @@ MonoBehaviour:
   dashSpeed: 4
   trailRenderer: {fileID: 2257918081923034125}
   weaponCollider: {fileID: 1179584583777100173}
+  playerState: {fileID: 0}
+  list: []
 --- !u!50 &1161565801236717016
 Rigidbody2D:
   serializedVersion: 4
