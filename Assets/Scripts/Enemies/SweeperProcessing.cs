@@ -11,6 +11,7 @@ public class BossProcessing : MonoBehaviour
     private BossAI bossAI;
     private Collider2D detectCollider;
     private DetectionEnemy detectEnemy;
+    private BossHealth bossHealth;
 
 
     private void Awake()
@@ -18,10 +19,15 @@ public class BossProcessing : MonoBehaviour
         bossAI = GetComponent<BossAI>();
         detectCollider = GetComponentInChildren<Collider2D>();
         detectEnemy = GetComponentInChildren<DetectionEnemy>();
+        bossHealth = GetComponent<BossHealth>();
     }
 
     private void Update()
     {
+        if(bossHealth.isDead)
+        {
+            return;
+        }
         EnemyControl();
         DetectDistanceToAttack();
     }
@@ -50,6 +56,8 @@ public class BossProcessing : MonoBehaviour
             bossAI.StopToTarget();
         }
     }
+
+    
 
 }
 
