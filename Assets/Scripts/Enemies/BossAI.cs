@@ -9,7 +9,7 @@ public class BossAI : MonoBehaviour
     [SerializeField] private float nextWaypointDistance = 3f; // Determine the distance between the companion and the target
     [SerializeField] private float moveSpeed = 2f; // Determine the speed of the companion
     public Transform target;
-    
+
     private Seeker seeker;
     private Path path;
     private Rigidbody2D rb;
@@ -21,6 +21,18 @@ public class BossAI : MonoBehaviour
     [SerializeField] private int currentWaypoint = 0;
 
     [SerializeField] public bool reachedEndOfPath { get; set; } = false;
+
+    public bool CanMove
+    {
+        get
+        {
+            return animator.GetBool("canMove");
+        }
+        set
+        {
+            animator.SetBool("canMove", value);
+        }
+    }
 
     private void Start()
     {
@@ -55,6 +67,7 @@ public class BossAI : MonoBehaviour
 
     private void Update()
     {
+
         //animator.SetBool("attack", true);
         if (path == null || reachedEndOfPath)
         {
@@ -75,9 +88,12 @@ public class BossAI : MonoBehaviour
         // Calculate the force to move the companion
         Vector2 force = moveSpeed * Time.fixedDeltaTime * direction;
         // Move the companion
-        rb.MovePosition(rb.position + force);
+        if (CanMove)
+        {
+            rb.MovePosition(rb.position + force);
+        }
         // Calculate the distance between the companion and the target
-        rb.AddForce(force);
+        //rb.AddForce(force);
         float distance = Vector2.Distance(rb.position, path.vectorPath[currentWaypoint]);
         // Flip the sprite
         if (direction.x < 0)

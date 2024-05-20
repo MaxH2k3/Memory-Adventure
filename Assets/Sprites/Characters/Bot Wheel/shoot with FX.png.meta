@@ -139,12 +139,12 @@ TextureImporter:
       name: shoot with FX_0
       rect:
         serializedVersion: 2
-        x: 10
+        x: 0
         y: 78
-        width: 45
+        width: 50
         height: 26
       alignment: 9
-      pivot: {x: 0.28, y: 0.8}
+      pivot: {x: 0.5, y: -3}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -160,12 +160,12 @@ TextureImporter:
       name: shoot with FX_1
       rect:
         serializedVersion: 2
-        x: 10
+        x: 0
         y: 52
-        width: 45
+        width: 50
         height: 26
       alignment: 9
-      pivot: {x: 0.28, y: 0.8}
+      pivot: {x: 0.5, y: -3}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -181,12 +181,12 @@ TextureImporter:
       name: shoot with FX_2
       rect:
         serializedVersion: 2
-        x: 10
+        x: 0
         y: 26
-        width: 45
+        width: 50
         height: 26
       alignment: 9
-      pivot: {x: 0.28, y: 0.8}
+      pivot: {x: 0.5, y: -3}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -202,12 +202,12 @@ TextureImporter:
       name: shoot with FX_3
       rect:
         serializedVersion: 2
-        x: 10
+        x: 0
         y: 0
-        width: 45
+        width: 50
         height: 26
       alignment: 9
-      pivot: {x: 0.28, y: 0.8}
+      pivot: {x: 0.5, y: -3}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
