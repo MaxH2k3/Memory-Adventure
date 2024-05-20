@@ -15,6 +15,7 @@ public class PlayerController : Singleton<PlayerController>
 
     private bool isBoosting = false;
     public bool FacingLeft { get; private set; } = false;
+    public bool canMove = true;
 
     private PlayerControls playerControls;
     private Vector2 movement;
@@ -25,7 +26,7 @@ public class PlayerController : Singleton<PlayerController>
 
     private CompanisionAI companionAI;
     private CompanisionHealth companionHealth;
-    [SerializeField] public List<CompanisionAI> list = new List<CompanisionAI>();
+    //[SerializeField] public List<CompanisionAI> list = new List<CompanisionAI>();
 
     protected override void Awake()
     {
@@ -36,9 +37,9 @@ public class PlayerController : Singleton<PlayerController>
         playerSprite = GetComponent <SpriteRenderer>();
         knockBack = GetComponent<KnockBack>();
 
-        companionAI = FindObjectOfType<CompanisionAI>();
-        companionHealth = FindObjectOfType<CompanisionHealth>();
-        list = new List<CompanisionAI>(FindObjectsOfType<CompanisionAI>());
+        //companionAI = FindObjectOfType<CompanisionAI>();
+        //companionHealth = FindObjectOfType<CompanisionHealth>();
+        //list = new List<CompanisionAI>(FindObjectsOfType<CompanisionAI>());
     }
 
     private void OnEnable()
@@ -70,6 +71,7 @@ public class PlayerController : Singleton<PlayerController>
 
     private void FixedUpdate()
     {
+        if (!canMove) return;
         FlipSprite();
         Move();
     }

@@ -139,12 +139,12 @@ TextureImporter:
       name: Spin Slam with VFX_0
       rect:
         serializedVersion: 2
-        x: 23
+        x: 0
         y: 240
-        width: 65
+        width: 88
         height: 30
       alignment: 9
-      pivot: {x: 0.50451607, y: 0.5978475}
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -160,12 +160,12 @@ TextureImporter:
       name: Spin Slam with VFX_1
       rect:
         serializedVersion: 2
-        x: 23
+        x: 0
         y: 210
-        width: 65
+        width: 88
         height: 30
       alignment: 9
-      pivot: {x: 0.50000006, y: 0.60763246}
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -181,12 +181,12 @@ TextureImporter:
       name: Spin Slam with VFX_2
       rect:
         serializedVersion: 2
-        x: 23
+        x: 0
         y: 180
-        width: 65
+        width: 88
         height: 30
       alignment: 9
-      pivot: {x: 0.50000006, y: 0.62720186}
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -202,12 +202,12 @@ TextureImporter:
       name: Spin Slam with VFX_3
       rect:
         serializedVersion: 2
-        x: 23
+        x: 0
         y: 150
-        width: 65
+        width: 88
         height: 30
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -223,12 +223,12 @@ TextureImporter:
       name: Spin Slam with VFX_4
       rect:
         serializedVersion: 2
-        x: 23
+        x: 0
         y: 120
-        width: 65
+        width: 88
         height: 30
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -244,12 +244,12 @@ TextureImporter:
       name: Spin Slam with VFX_5
       rect:
         serializedVersion: 2
-        x: 23
+        x: 0
         y: 90
-        width: 65
+        width: 88
         height: 30
       alignment: 9
-      pivot: {x: 0.50000006, y: 0.5293549}
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -265,12 +265,12 @@ TextureImporter:
       name: Spin Slam with VFX_6
       rect:
         serializedVersion: 2
-        x: 23
+        x: 0
         y: 60
-        width: 65
+        width: 88
         height: 30
       alignment: 9
-      pivot: {x: 0.50451607, y: 0.54892427}
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -286,12 +286,12 @@ TextureImporter:
       name: Spin Slam with VFX_7
       rect:
         serializedVersion: 2
-        x: 23
+        x: 0
         y: 30
-        width: 65
+        width: 88
         height: 30
       alignment: 9
-      pivot: {x: 0.50000006, y: 0.5587087}
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -307,12 +307,12 @@ TextureImporter:
       name: Spin Slam with VFX_8
       rect:
         serializedVersion: 2
-        x: 23
+        x: 0
         y: 0
-        width: 65
+        width: 88
         height: 30
       alignment: 9
-      pivot: {x: 0.50000006, y: 0.55870855}
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
