@@ -13,8 +13,10 @@ public class GameManager : Singleton<GameManager>
     [SerializeField]
     private GameObject pauseScreen;
 
-    private void Awake()
+    private new void Awake()
     {
+        base.Awake();
+
         DisableScreen();
     }
 

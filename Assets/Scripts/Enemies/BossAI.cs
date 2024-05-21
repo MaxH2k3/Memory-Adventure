@@ -117,7 +117,6 @@ public class BossAI : MonoBehaviour
         target = PlayerController.Instance.transform;
         reachedEndOfPath = false;
         animator.SetBool("walk", true);
-        animator.ResetTrigger("attack");
     }
 
     public void StopToTarget()
