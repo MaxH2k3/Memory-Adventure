@@ -4,15 +4,34 @@ using UnityEngine;
 
 public class EnemyWakeUp : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    private DetectionEnemy detectEnemy;
+    private Animator animator;
+
+    private void Awake()
     {
-        
+        detectEnemy = GetComponent<DetectionEnemy>();
+        animator = GetComponentInParent<Animator>();
     }
 
-    // Update is called once per frame
-    void Update()
+    private void Update()
     {
-        
+        StartCoroutine(StartWake());
     }
+
+    private IEnumerator StartWake()
+    {
+        if (detectEnemy.IsPlayerDetected())
+        {
+            animator.SetTrigger("wake");
+            yield return new WaitForSeconds(animator.GetCurrentAnimatorStateInfo(0).length);
+
+            animator.SetBool("idle", true);
+            //yield return new WaitForSeconds(animator.GetCurrentAnimatorStateInfo(0).length);
+        } else
+        {
+            animator.SetBool("idle", false);
+           // yield return new WaitForSeconds(animator.GetCurrentAnimatorStateInfo(0).length);
+        }
+    }
+
 }

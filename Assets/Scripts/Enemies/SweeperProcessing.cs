@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
 
-public class BossProcessing : MonoBehaviour
+public class SweeperProcessing : MonoBehaviour
 {
     [SerializeField] private float attackRange = 0f; // Determine the range of the attack
 
@@ -12,7 +12,7 @@ public class BossProcessing : MonoBehaviour
     private Collider2D detectCollider;
     private DetectionEnemy detectEnemy;
     private BossHealth bossHealth;
-
+    
 
     private void Awake()
     {

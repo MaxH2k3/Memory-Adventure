@@ -22,7 +22,7 @@ public class HotWheelAttack : MonoBehaviour
     private void Update()
     {
         EnemyControl();
-        DetectDistanceToAttack();
+        //DetectDistanceToAttack();
     }
 
     private void DetectDistanceToAttack()
@@ -36,17 +36,13 @@ public class HotWheelAttack : MonoBehaviour
 
     private void EnemyControl()
     {
-        if (detectEnemy.IsPlayerDetected())
-        {
-            return;
-        }
-
         if (Vector2.Distance(transform.position, PlayerController.Instance.transform.position) < attackRange)
         {
-            bossAI.animator.SetTrigger("wake");
+            Debug.Log("Moving to target...");
             bossAI.MoveToTarget();
         } else
         {
+            Debug.Log("Stopping to target...");
             bossAI.StopToTarget();
         }
     }
