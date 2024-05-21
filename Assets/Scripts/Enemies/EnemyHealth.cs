@@ -43,11 +43,15 @@ public class EnemyHealth : MonoBehaviour
             // Instantiate death VFX in the position of the enemy when it dies
             var animationDeath = Instantiate(deathVFXPrefab, transform.position, Quaternion.identity);
 
+           
             // Destroy the enemy current gameObject
             Destroy(gameObject);
 
             // Destroy the death VFX after 2 seconds
             Destroy(animationDeath, 2);
+
+            GetComponent<PickUpSpawner>().DropItems();
+
 
             // Add level to the player
             PlayerController.Instance.GetComponent<PlayerLevel>().LevelUp();

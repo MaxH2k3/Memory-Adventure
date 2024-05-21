@@ -18,6 +18,7 @@ GameObject:
   - component: {fileID: 6434706840921229358}
   - component: {fileID: 5982332900754388123}
   - component: {fileID: 8983687546860112455}
+  - component: {fileID: -2582815188872774089}
   m_Layer: 0
   m_Name: BlueSlime
   m_TagString: Enemy
@@ -247,3 +248,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   whiteFlashMaterial: {fileID: 2100000, guid: ddfa67f1b1e1d7741a281dd025efa5b6, type: 2}
   defaultMaterial: 0.2
+  restoreDefaultMatTime: 0.2
+--- !u!114 &-2582815188872774089
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5948902828395867522}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 004b40b39b831ef46a3a884fc25b8363, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  golfCoin: {fileID: 8679756578218267137, guid: 7d21c8938559fc644b5fa0758ff58377, type: 3}
+  healthGlobe: {fileID: 8679756578218267137, guid: 38af71ee57c7bf24da99849945959789, type: 3}
+  staminaGlobe: {fileID: 8679756578218267137, guid: 4ff5c6e2e2b8982419e27cb1e1255f89, type: 3}

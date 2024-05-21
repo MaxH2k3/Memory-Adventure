@@ -22,6 +22,7 @@ public class Pickup : MonoBehaviour
 
     private Vector3 moveDir;
     private Rigidbody2D rb;
+    const string HEALTH_SLIDER_TEXT = "Health Slider";
 
     private void Awake()
     {
@@ -98,13 +99,14 @@ public class Pickup : MonoBehaviour
         switch (pickUpType)
         {
             case PickUpType.GoldCoin:
-                Debug.Log("GoldCoin");
+                EconomyManager.Instance.UpdateCurrentGold();
+                
                 break;
             case PickUpType.HealthGlobe:
-                Debug.Log("HealthGlobe");
+              
                 break;
             case PickUpType.StaminaGlobe:
-                Debug.Log("StaminaGlobe");
+                Stamina.Instance.RefreshStamina();
                 break;
         }
     }

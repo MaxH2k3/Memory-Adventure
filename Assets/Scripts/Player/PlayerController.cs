@@ -57,6 +57,7 @@ public class PlayerController : Singleton<PlayerController>
 
 
         playerControls.Action.Dash.performed += _ => Dash();
+        ActiveWeapon.Instance.Equ
     }
 
     private void Update()
@@ -143,14 +144,20 @@ public class PlayerController : Singleton<PlayerController>
 
     private void Dash()
     {
-        // Tăng tốc độ di chuyển lên dashSpeed
-        moveSpeed *= dashSpeed;
+        if(!isBoosting && Stamina.Instance.CurrentStamina > 0)
+        {
+            Stamina.Instance.UseStamina();
 
-        // Bật trailRenderer để hiển thị hiệu ứng Dash
-        trailRenderer.emitting = true;
+            // Tăng tốc độ di chuyển lên dashSpeed
+            moveSpeed *= dashSpeed;
 
-        // Xử lý việc kết thúc Dash sau một khoảng thời gian nhất định.
-        StartCoroutine(EndDashRoutine());
+            // Bật trailRenderer để hiển thị hiệu ứng Dash
+            trailRenderer.emitting = true;
+
+            // Xử lý việc kết thúc Dash sau một khoảng thời gian nhất định.
+            StartCoroutine(EndDashRoutine());
+        }
+        
     }
 
     private IEnumerator EndDashRoutine()

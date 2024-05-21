@@ -37,6 +37,11 @@ public class ActiveBag : Singleton<ActiveBag>
         ToggleActiveBag(activeSlotIndexNum + 1);
     }
 
+    public void EquipStartingWeapon()
+    {
+        ToggleActiveBag(0);
+    }
+
     private void ToggleActiveBag(int indexSlot)
     {
         // Turn off the current active bag
@@ -68,6 +73,7 @@ public class ActiveBag : Singleton<ActiveBag>
         // Get the weapon prefab from the active slot
         GameObject weaponSlot = currentSlot.GetComponentInChildren<InventorySlot>().GetWeaponInfo().weaponPrefab;
         // Instantiate the weapon prefab
+        //GameObject newWeapon = Instantiate(weaponSlot, ActiveWeapon.Instance.transform.position, Quaternion.identity);
         GameObject newWeapon = Instantiate(weaponSlot, ActiveWeapon.Instance.transform.position, Quaternion.identity);
 
         // Set the weapon prefab to the active weapon

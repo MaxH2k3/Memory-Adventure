@@ -19,6 +19,7 @@ GameObject:
   - component: {fileID: 3285467001217412519}
   - component: {fileID: 4337039563864207299}
   - component: {fileID: 1322673278246644163}
+  - component: {fileID: 1699434054114242075}
   m_Layer: 0
   m_Name: Ghost
   m_TagString: Enemy
@@ -171,8 +172,8 @@ MonoBehaviour:
   roamChangeDirFloat: 2
   attackRange: 5
   enemyType: {fileID: 1322673278246644163}
-  attackCoolDown: 2
-  stopMovingWhiteAttacking: 1
+  attackCooldown: 2
+  stopMovingWhileAttacking: 0
 --- !u!114 &3663497481657456292
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -254,6 +255,30 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bulletPrefab: {fileID: 5853429121060719704, guid: 3b3a11cf7c4671444ab5f1d13d548d26, type: 3}
+  bulletMoveSpeed: 0.1
+  burstCount: 1
+  projectilesPerBurst: 1
+  angleSpread: 0
+  startingDistance: 0.1
+  timeBetweenBursts: 0.1
+  restTime: 1
+  stagger: 0
+  oscillate: 0
+--- !u!114 &1699434054114242075
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5433767047256443700}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 004b40b39b831ef46a3a884fc25b8363, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  golfCoin: {fileID: 8679756578218267137, guid: 7d21c8938559fc644b5fa0758ff58377, type: 3}
+  healthGlobe: {fileID: 8679756578218267137, guid: 38af71ee57c7bf24da99849945959789, type: 3}
+  staminaGlobe: {fileID: 8679756578218267137, guid: 4ff5c6e2e2b8982419e27cb1e1255f89, type: 3}
 --- !u!1 &6598078548778906235
 GameObject:
   m_ObjectHideFlags: 0
