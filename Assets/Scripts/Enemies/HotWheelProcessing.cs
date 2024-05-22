@@ -10,6 +10,8 @@ public class HotWheelAttack : MonoBehaviour
     private BossAI bossAI;
     private Collider2D detectCollider;
     private DetectionEnemy detectEnemy;
+    private float distanceFire;
+    private Shooter shooter;
 
 
     private void Awake()
@@ -17,32 +19,37 @@ public class HotWheelAttack : MonoBehaviour
         bossAI = GetComponent<BossAI>();
         detectCollider = GetComponentInChildren<Collider2D>();
         detectEnemy = GetComponentInChildren<DetectionEnemy>();
+        shooter = GetComponent<Shooter>();
+        distanceFire = attackRange - attackRange / 3;
     }
 
     private void Update()
     {
-        EnemyControl();
-        //DetectDistanceToAttack();
+        var distance = Vector2.Distance(transform.position, PlayerController.Instance.transform.position);
+        EnemyControl(distance);
+        DetectDistanceToAttack(distance);
     }
 
-    private void DetectDistanceToAttack()
+    private void DetectDistanceToAttack(float distance)
     {
-        if (detectEnemy.IsPlayerDetected())
+        if (distance < distanceFire)
         {
             bossAI.StopToTarget();
-            bossAI.animator.SetTrigger("attack");
+            bossAI.animator.SetBool("attack", true);
+            //shooter.Attack();
+        } else
+        {
+            bossAI.animator.SetBool("attack", false);
         }
     }
 
-    private void EnemyControl()
+    private void EnemyControl(float distance)
     {
-        if (Vector2.Distance(transform.position, PlayerController.Instance.transform.position) < attackRange)
+        if (distance < attackRange)
         {
-            Debug.Log("Moving to target...");
             bossAI.MoveToTarget();
         } else
         {
-            Debug.Log("Stopping to target...");
             bossAI.StopToTarget();
         }
     }
