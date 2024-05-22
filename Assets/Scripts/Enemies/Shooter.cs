@@ -6,14 +6,14 @@ public class Shooter : MonoBehaviour, IEnemy
 {
     [SerializeField] private GameObject bulletPrefab;
     [SerializeField] private float bulletMoveSpeed;
-    [SerializeField] private int burstCount;
-    [SerializeField] private int projectilesPerBurst;
-    [SerializeField][Range(0, 359)] private float angleSpread;
-    [SerializeField] private float startingDistance = 0.1f;
-    [SerializeField] private float timeBetweenBursts;
-    [SerializeField] private float restTime = 1f;
-    [SerializeField] private bool stagger;
-    [SerializeField] private bool oscillate;
+    [SerializeField] private int burstCount; // Number of bursts
+    [SerializeField] private int projectilesPerBurst; // Number of projectiles per burst
+    [SerializeField][Range(0, 359)] private float angleSpread; // Angle spread of the bullets
+    [SerializeField] private float startingDistance = 0.1f; // Distance from the shooter to the bullet
+    [SerializeField] private float timeBetweenBursts; // Time between bursts
+    [SerializeField] private float restTime = 1f; // Rest time between bursts
+    [SerializeField] private bool stagger; // Stagger the bullets
+    [SerializeField] private bool oscillate; // Oscillate the bullets
 
     private bool isShooting = false;
 
@@ -25,7 +25,7 @@ public class Shooter : MonoBehaviour, IEnemy
         if (burstCount < 1) { burstCount = 1; }
         if (timeBetweenBursts < 0.1f) { timeBetweenBursts = 0.1f; }
         if (restTime < 0.1f) { restTime = 0.1f; }
-        if (startingDistance < 0.1f) { startingDistance = 0.1f; }
+        //if (startingDistance < 0.1f) { startingDistance = 0.1f; }
         if (angleSpread == 0) { projectilesPerBurst = 1; }
         if (bulletMoveSpeed <= 0) { bulletMoveSpeed = 0.1f; }
     }

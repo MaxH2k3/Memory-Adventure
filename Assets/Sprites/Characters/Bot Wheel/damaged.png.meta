@@ -139,11 +139,11 @@ TextureImporter:
       name: damaged_0
       rect:
         serializedVersion: 2
-        x: 12
+        x: 0
         y: 26
-        width: 28
+        width: 64
         height: 26
-      alignment: 0
+      alignment: 9
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
@@ -160,11 +160,11 @@ TextureImporter:
       name: damaged_1
       rect:
         serializedVersion: 2
-        x: 12
+        x: 0
         y: 0
-        width: 28
+        width: 64
         height: 26
-      alignment: 0
+      alignment: 9
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
