@@ -54,6 +54,7 @@ public class CompanisionAI : MonoBehaviour
 
     private void Update()
     {
+        animator.SetBool("attack", true);
         if (path == null || reachedEndOfPath)
         {
             return;

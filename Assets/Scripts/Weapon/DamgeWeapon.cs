@@ -19,9 +19,14 @@ public class DamgeWeapon : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collision)
     {
         var enemyHealth = collision.gameObject.GetComponent<EnemyHealth>();
+        var bossHealth = collision.gameObject.GetComponent<BossHealth>();
         if (enemyHealth)
         {
             enemyHealth.TakeDamage(damageAmount);
+        } else if(bossHealth)
+        {
+            bossHealth.TakeDamage(damageAmount);
         }
+        
     }
 }

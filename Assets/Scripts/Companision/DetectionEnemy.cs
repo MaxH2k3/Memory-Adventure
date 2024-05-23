@@ -26,9 +26,10 @@ public class DetectionEnemy : MonoBehaviour
 
     private void Update()
     {
-        if (isPlayerDetected)
-        {
-            Debug.Log("Enemy Detected");
-        }
+    }
+
+    public bool IsPlayerDetected()
+    {
+        return isPlayerDetected;
     }
 }

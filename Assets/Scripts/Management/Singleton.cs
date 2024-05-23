@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class Singleton<T> : MonoBehaviour where T : Singleton<T>
@@ -10,7 +11,7 @@ public class Singleton<T> : MonoBehaviour where T : Singleton<T>
     protected virtual void Awake()
     {
         // If there is already an instance of the class, destroy the new one
-        if (Instance != null && this.gameObject != null)
+        if (Instance != null && this.gameObject != null && this.gameObject.IsUnityNull())
         {
             Destroy(this.gameObject);
         } else
