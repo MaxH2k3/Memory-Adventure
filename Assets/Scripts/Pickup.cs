@@ -103,7 +103,7 @@ public class Pickup : MonoBehaviour
                 
                 break;
             case PickUpType.HealthGlobe:
-              
+                PlayerHealth.Instance.HealPlayer(1);
                 break;
             case PickUpType.StaminaGlobe:
                 Stamina.Instance.RefreshStamina();

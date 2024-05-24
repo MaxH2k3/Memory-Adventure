@@ -74,10 +74,10 @@ public class ActiveBag : Singleton<ActiveBag>
         GameObject weaponSlot = currentSlot.GetComponentInChildren<InventorySlot>().GetWeaponInfo().weaponPrefab;
         // Instantiate the weapon prefab
         //GameObject newWeapon = Instantiate(weaponSlot, ActiveWeapon.Instance.transform.position, Quaternion.identity);
-        GameObject newWeapon = Instantiate(weaponSlot, ActiveWeapon.Instance.transform.position, Quaternion.identity);
+        GameObject newWeapon = Instantiate(weaponSlot, ActiveWeapon.Instance.transform);
 
         // Set the weapon prefab to the active weapon
-        ActiveWeapon.Instance.transform.rotation = Quaternion.Euler(0, 0, 0);
+        //ActiveWeapon.Instance.transform.rotation = Quaternion.Euler(0, 0, 0);
         newWeapon.transform.SetParent(ActiveWeapon.Instance.transform);
         
         ActiveWeapon.Instance.NewWeapon(newWeapon.GetComponent<MonoBehaviour>());

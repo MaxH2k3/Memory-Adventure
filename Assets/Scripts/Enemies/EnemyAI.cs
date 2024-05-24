@@ -73,7 +73,6 @@ public class EnemyAI : MonoBehaviour
         {
             currentState = StateEnemy.Roaming;
         }
-        Debug.Log(canAttack);
         if (attackRange != 0 && canAttack){
             canAttack = false;
             (enemyType as IEnemy).Attack();

@@ -42,7 +42,7 @@ public class Stamina : Singleton<Stamina>
         UpdateStaminaImages() ;
     }
 
-    private IEnumerable RefreshStaminaRoutine()
+    private IEnumerator RefreshStaminaRoutine()
     {
         while (true)
         {
@@ -68,7 +68,7 @@ public class Stamina : Singleton<Stamina>
         if(CurrentStamina < maxStamina)
         {
             StopAllCoroutines();
-            StartCoroutine((string)RefreshStaminaRoutine());
+            StartCoroutine(RefreshStaminaRoutine());
         }
     }
 }

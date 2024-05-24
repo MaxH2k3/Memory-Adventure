@@ -84,11 +84,11 @@ public class PlayerHealth : Singleton<PlayerHealth>
         CheckIfPlayerDeath();
     }
     
-    public void HealPlayer()
+    public void HealPlayer(int amount)
     {
         if(currentHealth < health)
         {
-            currentHealth += 1;
+            currentHealth += amount;
         }
         UpdateHealthSlider();
        
@@ -130,7 +130,7 @@ public class PlayerHealth : Singleton<PlayerHealth>
         SceneManager.LoadScene(TOWN_TEXT);
     }
 
-    private void UpdateHealthSlider()
+    public void UpdateHealthSlider()
     {
         if (healthSlider == null)
         {

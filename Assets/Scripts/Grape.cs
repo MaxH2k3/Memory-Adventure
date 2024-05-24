@@ -31,7 +31,6 @@ public class Grape : MonoBehaviour, IEnemy
             spriteRenderer.flipX = true;
         }
 
-        Debug.Log("aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa");
         
     }
 

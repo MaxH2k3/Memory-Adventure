@@ -920,6 +920,22 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1540629116865505525, guid: 52767dcfc4ee14942a2de9cee118de2b, type: 3}
+      propertyPath: itemAmount
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 7880772261752618692, guid: 52767dcfc4ee14942a2de9cee118de2b, type: 3}
+      propertyPath: attackRange
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 7880772261752618692, guid: 52767dcfc4ee14942a2de9cee118de2b, type: 3}
+      propertyPath: attackCooldown
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7880772261752618692, guid: 52767dcfc4ee14942a2de9cee118de2b, type: 3}
+      propertyPath: roamChangeDirFloat
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 9007168509174198592, guid: 52767dcfc4ee14942a2de9cee118de2b, type: 3}
       propertyPath: m_Name
       value: Grape (1)

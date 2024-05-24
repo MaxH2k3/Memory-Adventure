@@ -57,7 +57,7 @@ public class PlayerController : Singleton<PlayerController>
 
 
         playerControls.Action.Dash.performed += _ => Dash();
-        ActiveWeapon.Instance.Equ
+        ActiveBag.Instance.EquipStartingWeapon();
     }
 
     private void Update()
@@ -125,7 +125,7 @@ public class PlayerController : Singleton<PlayerController>
 
     private void Move()
     {
-        if(knockBack.GettingKnockBack)
+        if(knockBack.GettingKnockBack || PlayerHealth.Instance.isDead)
         {
             return;
         }
