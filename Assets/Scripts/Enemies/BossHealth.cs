@@ -7,7 +7,6 @@ public class BossHealth : MonoBehaviour
     [SerializeField] private int health = 3;
     [SerializeField] private float knockBackThrust = 15f; //xác định mức đẩy lùi khi kẻ địch bị tấn công.
     [SerializeField] private GameObject deathVFXPrefab; //một đối tượng Prefab được sử dụng để tạo hiệu ứng khi kẻ địch bị tiêu diệt.
-    [SerializeField] private bool haveAnimationDeath = false; //xác định xem kẻ địch có hiệu ứng chết không.
     [SerializeField] private float hitProbability = 100;
 
     private int currentHealth; // current health
@@ -60,17 +59,10 @@ public class BossHealth : MonoBehaviour
             Destroy(animationDeath, 2);
 
             // Add level to the player
-            PlayerController.Instance.GetComponent<PlayerLevel>().LevelUp();
+            ManageWeaponPlayer.Instance.UpdateWeapon(2);
 
             // Play death animation
-            if (haveAnimationDeath)
-            {
-                animator.SetTrigger("dead");
-                return;
-            }
-
-            // Destroy the enemy current gameObject
-            Destroy(gameObject);
+            animator.SetTrigger("dead");
         }
     }
 }

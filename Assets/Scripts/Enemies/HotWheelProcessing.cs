@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class HotWheelAttack : MonoBehaviour
+public class HotWheelProcessing : MonoBehaviour
 {
 
     [SerializeField] private float attackRange = 0f; // Determine the range of the attack

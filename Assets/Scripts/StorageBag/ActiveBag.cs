@@ -8,8 +8,9 @@ public class ActiveBag : Singleton<ActiveBag>
 {
     private int activeSlotIndexNum = 0;
     public Transform currentSlot { get; private set; }
-
     private PlayerControls playerControls;
+
+    public WeaponInfo currentWeapon;
 
     protected override void Awake()
     {
@@ -55,7 +56,7 @@ public class ActiveBag : Singleton<ActiveBag>
         ChangeActiveWeapon();
     }
 
-    private void ChangeActiveWeapon()
+    public void ChangeActiveWeapon()
     {
         // Destroy the current weapon
         ActiveWeapon.Instance.DestroyCurrentWeapon();
@@ -70,8 +71,10 @@ public class ActiveBag : Singleton<ActiveBag>
         
         // Get the current slot
         currentSlot = transform.GetChild(activeSlotIndexNum);
+        // Get the weapon info from the active slot
+        currentWeapon = currentSlot.GetComponentInChildren<InventorySlot>().GetWeaponInfo();
         // Get the weapon prefab from the active slot
-        GameObject weaponSlot = currentSlot.GetComponentInChildren<InventorySlot>().GetWeaponInfo().weaponPrefab;
+        GameObject weaponSlot = currentWeapon.weaponPrefab;
         // Instantiate the weapon prefab
         //GameObject newWeapon = Instantiate(weaponSlot, ActiveWeapon.Instance.transform.position, Quaternion.identity);
         GameObject newWeapon = Instantiate(weaponSlot, ActiveWeapon.Instance.transform);
@@ -87,9 +90,11 @@ public class ActiveBag : Singleton<ActiveBag>
     public void UpdateInventorySlot()
     {
         // Change the weapon sprite in the inventory slot
-        currentSlot.GetChild(1).GetComponent<Image>().sprite = ManageWeaponPlayer.Instance.weaponManager.SelectWeapon(WeaponType.Sword).GetComponent<SpriteRenderer>().sprite;
+        currentSlot.GetChild(1).GetComponent<Image>().sprite = ManageWeaponPlayer.Instance.weaponManager.SelectWeapon(currentWeapon.weaponType).GetComponent<SpriteRenderer>().sprite;
         // Change the weapon prefab in the inventory slot
-        currentSlot.GetComponentInChildren<InventorySlot>().SetWeaponPrefab(ManageWeaponPlayer.Instance.weaponManager.SelectWeapon(WeaponType.Sword));
+        currentSlot.GetComponentInChildren<InventorySlot>().SetWeaponPrefab(ManageWeaponPlayer.Instance.weaponManager.SelectWeapon(currentWeapon.weaponType));
+
+        ChangeActiveWeapon();
     }
 
     public void initWeaponInventory()

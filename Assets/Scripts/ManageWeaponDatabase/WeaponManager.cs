@@ -7,7 +7,7 @@ using UnityEngine;
 public class WeaponManager : MonoBehaviour
 {
     public WeaponDatabase weaponDatabase;
-
+    
     private Dictionary<WeaponType, int> weapons = new Dictionary<WeaponType, int>
     {
         { WeaponType.Sword, 1 },
@@ -87,8 +87,11 @@ public class WeaponManager : MonoBehaviour
     /// <param name="weaponType"></param>
     public void UpgradeWeapon(WeaponType weaponType)
     {
-        weapons[weaponType] += 1;
-        ManageWeaponPlayer.Instance.upgradeWeapon = true;
+        if(weaponDatabase.MaxLevelWeapon(weaponType) > weapons[weaponType])
+        {
+            weapons[weaponType] += 1;
+        }
+        
     }
 
 }

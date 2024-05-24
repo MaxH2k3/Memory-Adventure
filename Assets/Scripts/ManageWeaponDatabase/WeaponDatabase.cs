@@ -1,3 +1,4 @@
+using Assets.Scripts.Enums;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -64,6 +65,32 @@ public class WeaponDatabase : ScriptableObject
         {
             return booms[0];
         }
+    }
+
+    public int MaxLevelWeapon(WeaponType weaponType)
+    {
+        if (weaponType == WeaponType.Sword)
+        {
+            return swords.Length;
+        }
+        else if (weaponType == WeaponType.Staff)
+        {
+            return staffs.Length;
+        }
+        else if (weaponType == WeaponType.Bow)
+        {
+            return bows.Length;
+        }
+        else if (weaponType == WeaponType.Boomerang)
+        {
+            return boomerangs.Length;
+        }
+        else if (weaponType == WeaponType.Boom)
+        {
+            return booms.Length;
+        }
+
+        return 0;
     }
 
 }
