@@ -9,8 +9,8 @@ namespace Assets.Scripts.Enums
     public enum WeaponType
     {
         Sword = 1,
-        Staff = 2,
-        Bow = 3,
+        Bow = 2,
+        Staff = 3,
         Boomerang = 4,
         Boom = 5
     }

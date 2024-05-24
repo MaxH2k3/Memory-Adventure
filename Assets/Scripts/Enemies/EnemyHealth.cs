@@ -6,7 +6,6 @@ public class EnemyHealth : MonoBehaviour
     [SerializeField] private int health = 3;
     [SerializeField] private float knockBackThrust = 15f; //xác định mức đẩy lùi khi kẻ địch bị tấn công.
     [SerializeField] private GameObject deathVFXPrefab; //một đối tượng Prefab được sử dụng để tạo hiệu ứng khi kẻ địch bị tiêu diệt.
-    [SerializeField] private bool haveAnimationDeath = false; //xác định xem kẻ địch có hiệu ứng chết không.
 
     private int currentHealth; // current health
     private KnockBack knockBack; // reference to KnockBack script
@@ -52,14 +51,7 @@ public class EnemyHealth : MonoBehaviour
             Destroy(animationDeath, 2);
 
             // Add level to the player
-            PlayerController.Instance.GetComponent<PlayerLevel>().LevelUp();
-
-            // Play death animation
-            if (haveAnimationDeath)
-            {
-                animator.SetTrigger("dead");
-                return;
-            }
+            ManageWeaponPlayer.Instance.UpdateWeapon(1);
 
             // Destroy the enemy current gameObject
             Destroy(gameObject);
