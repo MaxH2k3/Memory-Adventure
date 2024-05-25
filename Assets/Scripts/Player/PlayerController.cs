@@ -58,7 +58,6 @@ public class PlayerController : Singleton<PlayerController>
 
 
         playerControls.Action.Dash.performed += _ => Dash();
-        ActiveBag.Instance.EquipStartingWeapon();
     }
 
     private void Update()

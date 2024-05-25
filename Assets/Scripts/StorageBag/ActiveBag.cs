@@ -38,11 +38,6 @@ public class ActiveBag : Singleton<ActiveBag>
         ToggleActiveBag(activeSlotIndexNum + 1);
     }
 
-    public void EquipStartingWeapon()
-    {
-        ToggleActiveBag(0);
-    }
-
     private void ToggleActiveBag(int indexSlot)
     {
         // Turn off the current active bag
