@@ -19,7 +19,7 @@ public class PlayerHealth : Singleton<PlayerHealth>
     private bool canTakeDamage = true; //determine if the player can take damage
 
     const string HEALTH_SLIDER_TEXT = "Health Slider";
-    const string TOWN_TEXT = "Scene1";
+    const string TOWN_TEXT = "Scene 1";
     readonly int DEATH_HASH = Animator.StringToHash("Death");
 
     protected override void Awake()
@@ -113,7 +113,7 @@ public class PlayerHealth : Singleton<PlayerHealth>
             Destroy(ActiveWeapon.Instance.gameObject);
             currentHealth = 0;
             GetComponent<Animator>().SetTrigger(DEATH_HASH);
-            StartCoroutine((string)DeathLoadSceneRoutine());
+            StartCoroutine(DeathLoadSceneRoutine());
         }
     }
 
@@ -123,7 +123,7 @@ public class PlayerHealth : Singleton<PlayerHealth>
         canTakeDamage = true;
     }
 
-    private IEnumerable DeathLoadSceneRoutine()
+    private IEnumerator DeathLoadSceneRoutine()
     {
         yield return new WaitForSeconds(2f);
         Destroy(gameObject);
