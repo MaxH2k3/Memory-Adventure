@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9d1514134bc4fbd41bb739b1b9a49231, type: 3}
-  m_Name: New Rule Tile
+  m_Name: Foreground
   m_EditorClassIdentifier: 
   m_DefaultSprite: {fileID: 532301414, guid: ae1cb77b3066df64d897a054e46a23a5, type: 3}
   m_DefaultGameObject: {fileID: 0}

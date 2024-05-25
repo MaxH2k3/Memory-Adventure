@@ -5,7 +5,7 @@ using UnityEngine;
 public class Singleton<T> : MonoBehaviour where T : Singleton<T>
 {
     // Storage a present instance of the class
-    public static T instance;
+    public static T instance; 
     public static T Instance
     {
         get { return instance; }
