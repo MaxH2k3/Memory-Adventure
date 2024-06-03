@@ -7,7 +7,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Slash
+  m_Name: Torche
   m_Shader: {fileID: -6465566751694194690, guid: 0415e96dc532464479e8798cba93287a, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
@@ -42,9 +42,9 @@ Material:
     m_Ints: []
     m_Floats: []
     m_Colors:
-    - _Color: {r: 2.1760252, g: 1.9994797, b: 1.9994797, a: 0}
+    - _Color: {r: 1.2960879, g: 1.2272891, b: 0.013630284, a: 1}
   m_BuildTextureStacks: []
---- !u!114 &2296407944701317137
+--- !u!114 &8448527576767888713
 MonoBehaviour:
   m_ObjectHideFlags: 11
   m_CorrespondingSourceObject: {fileID: 0}
