@@ -5387,6 +5387,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   upgradeWeapon: 0
+  conditions: 3
 --- !u!1 &526776094
 GameObject:
   m_ObjectHideFlags: 0
@@ -30892,7 +30893,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1001 &3312598332724864353
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -30901,6 +30902,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 591989419026430546, guid: 9eeb4301354ca0540bc17db790dc433e, type: 3}
+      propertyPath: m_AdditionalShaderChannelsFlag
+      value: 25
+      objectReference: {fileID: 0}
     - target: {fileID: 600671912967166314, guid: 9eeb4301354ca0540bc17db790dc433e, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -31141,6 +31146,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Inventory_Boom
       objectReference: {fileID: 0}
+    - target: {fileID: 6309117890504922658, guid: 9eeb4301354ca0540bc17db790dc433e, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6309117890504922658, guid: 9eeb4301354ca0540bc17db790dc433e, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6493370271482379006, guid: 9eeb4301354ca0540bc17db790dc433e, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -31217,7 +31230,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 339980503423837401, guid: f624fb557b80cc243a2c347485fbfb7a, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 2.8434865
+      value: 5.7543135
       objectReference: {fileID: 0}
     - target: {fileID: 339980503423837401, guid: f624fb557b80cc243a2c347485fbfb7a, type: 3}
       propertyPath: m_LocalPosition.y
