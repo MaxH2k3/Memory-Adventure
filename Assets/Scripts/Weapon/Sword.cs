@@ -1,3 +1,4 @@
+using Assets.Scripts.Enums;
 using System.Collections;
 using UnityEngine;
 
@@ -28,6 +29,8 @@ public class Sword : MonoBehaviour, IWeapon
     private void Update()
     {
         FlipItem();
+
+        
     }
 
     public void Attack()
@@ -37,6 +40,13 @@ public class Sword : MonoBehaviour, IWeapon
 
         slashAnimation = Instantiate(slashAnimationPrefab, slashPoint.position, Quaternion.identity); // instantiate the slash animation at the slash point and set its rotation to the identity quaternion
         slashAnimation.transform.SetParent(slashPoint.parent); // set the slash animation's parent to the slash point's parent. This is done so that the slash animation will follow the player's movement
+
+
+            /*Vector3 cursorScreenPosition = Input.mousePosition;
+            Vector3 cursorWorldPosition = Camera.main.ScreenToWorldPoint(cursorScreenPosition);
+            cursorWorldPosition.z = 0; // Set z to 0 since we're working in 2D
+            var skill = Instantiate(ManageWeaponPlayer.Instance.weaponManager.SelectSkillWeapon(WeaponType.Sword), cursorWorldPosition, Quaternion.identity);
+            Destroy(skill, 2f);*/
     }
 
     public void DoneAttackingAnimation()

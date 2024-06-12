@@ -7,4 +7,5 @@ public class Weapon
 {
     public string weaponName;
     public GameObject weaponPrefab;
+    [SerializeField]public GameObject skillPrefab;
 }

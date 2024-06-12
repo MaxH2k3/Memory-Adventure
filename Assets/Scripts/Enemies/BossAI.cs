@@ -126,4 +126,13 @@ public class BossAI : MonoBehaviour
         animator.SetBool("walk", false);
     }
 
+
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        Debug.Log("Hit");
+        if (other.CompareTag("Skill"))
+        {
+            Debug.Log("Hit");
+        }
+    }
 }

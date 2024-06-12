@@ -15,21 +15,29 @@ MonoBehaviour:
   swords:
   - weaponName: normal
     weaponPrefab: {fileID: 1686935773269134760, guid: b8614981fe64c144f9ccdf3918481969, type: 3}
+    skillPrefab: {fileID: 1314787664237178328, guid: dfb9a2c27cd89544f893a9cbb1c88b62, type: 3}
   - weaponName: life
     weaponPrefab: {fileID: 3673207076697655384, guid: 2c649b1ec366a0a4097f5b77c82d0f68, type: 3}
+    skillPrefab: {fileID: 0}
   - weaponName: sand
     weaponPrefab: {fileID: 1526133359367170964, guid: 1cef3eca62c29c245b302c34816d3aa0, type: 3}
+    skillPrefab: {fileID: 1314787664237178328, guid: dfb9a2c27cd89544f893a9cbb1c88b62, type: 3}
   - weaponName: fire
     weaponPrefab: {fileID: 1772988777571434440, guid: 113d7827a62496249bed357ec6a9adc4, type: 3}
+    skillPrefab: {fileID: 1314787664237178328, guid: dfb9a2c27cd89544f893a9cbb1c88b62, type: 3}
   staffs:
   - weaponName: normal
     weaponPrefab: {fileID: 2691618842713023371, guid: 8265d18308d94c24197f1c4edc6858f4, type: 3}
+    skillPrefab: {fileID: 0}
   bows:
   - weaponName: normal
     weaponPrefab: {fileID: 8045705347788298893, guid: 823bd2ec7022dce40a799582afbfaa96, type: 3}
+    skillPrefab: {fileID: 0}
   boomerangs:
   - weaponName: normal
     weaponPrefab: {fileID: 2709124906285571049, guid: 9c06aabe6459393419d79603a9222037, type: 3}
+    skillPrefab: {fileID: 0}
   booms:
   - weaponName: normal
     weaponPrefab: {fileID: 701222575100631657, guid: dad588021c3d9c640b3c6c9accfa6971, type: 3}
+    skillPrefab: {fileID: 0}

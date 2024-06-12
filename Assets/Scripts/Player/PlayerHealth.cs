@@ -41,9 +41,10 @@ public class PlayerHealth : Singleton<PlayerHealth>
     {
         // Check if the player is colliding with an enemy
         EnemyAI enemy = collision.gameObject.GetComponent<EnemyAI>();
+        BossAI boss = collision.gameObject.GetComponent<BossAI>();
 
         // If the player is colliding with an enemy and can take damage
-        if (enemy)
+        if (enemy || boss)
         {
             // Take damage
             TakeDamage(1, transform);

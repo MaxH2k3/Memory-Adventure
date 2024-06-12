@@ -133,5 +133,10 @@ public class EnemyAI : MonoBehaviour
         canAttack = true;
     }
 
+    private void OnParticleCollision(GameObject other)
+    {
+        Debug.Log("Hit by particle");
+    }
+
 
 }

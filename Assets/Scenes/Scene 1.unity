@@ -12931,6 +12931,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: hot wheels
       objectReference: {fileID: 0}
+    - target: {fileID: 6000572436272688422, guid: a3ad06ff9bc445342aa8a9e0cb0cdd92, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8175562093425702947, guid: a3ad06ff9bc445342aa8a9e0cb0cdd92, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -13447,11 +13455,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5855832626348840521, guid: bf8ea15edba1c504aa61ba378cd6f7f0, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -7.41
+      value: -11.69
       objectReference: {fileID: 0}
     - target: {fileID: 5855832626348840521, guid: bf8ea15edba1c504aa61ba378cd6f7f0, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.5
+      value: -0.73
       objectReference: {fileID: 0}
     - target: {fileID: 5855832626348840521, guid: bf8ea15edba1c504aa61ba378cd6f7f0, type: 3}
       propertyPath: m_LocalPosition.z
@@ -14585,11 +14593,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 339980503423837401, guid: f624fb557b80cc243a2c347485fbfb7a, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 4.3949533
+      value: 4.394892
       objectReference: {fileID: 0}
     - target: {fileID: 339980503423837401, guid: f624fb557b80cc243a2c347485fbfb7a, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.41330975
+      value: 0.41330022
       objectReference: {fileID: 0}
     - target: {fileID: 824623273291573080, guid: f624fb557b80cc243a2c347485fbfb7a, type: 3}
       propertyPath: m_Name

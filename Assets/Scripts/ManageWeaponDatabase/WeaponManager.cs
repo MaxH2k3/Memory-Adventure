@@ -45,6 +45,28 @@ public class WeaponManager : MonoBehaviour
         return null;
     }
 
+    public GameObject SelectSkillWeapon(WeaponType weaponType)
+    {
+        if (weaponType == WeaponType.Sword)
+        {
+            return weaponDatabase.GetWeaponSword(weapons[WeaponType.Sword] - 1).skillPrefab;
+        } else if (weaponType == WeaponType.Staff)
+        {
+            return weaponDatabase.GetWeaponStaff(weapons[WeaponType.Staff] - 1).skillPrefab;
+        } else if (weaponType == WeaponType.Bow)
+        {
+            return weaponDatabase.GetWeaponBow(weapons[WeaponType.Bow] - 1).skillPrefab;
+        } else if (weaponType == WeaponType.Boomerang)
+        {
+            return weaponDatabase.GetWeaponBoomerang(weapons[WeaponType.Boomerang] - 1).skillPrefab;
+        } else if (weaponType == WeaponType.Boom)
+        {
+            return weaponDatabase.GetWeaponBoom(weapons[WeaponType.Boom] - 1).skillPrefab;
+        }
+
+        return null;
+    }
+
     /// <summary>
     /// Get the number of weapon type
     /// </summary>
