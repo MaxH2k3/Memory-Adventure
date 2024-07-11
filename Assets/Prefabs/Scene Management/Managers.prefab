@@ -61,7 +61,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   currentState: 0
-  pauseScreen: {fileID: 5975992786147429364, guid: 4f6767cc886c8504a9b45f037a592032, type: 3}
+  pauseScreen: {fileID: 0}
 --- !u!114 &2325508497702199847
 MonoBehaviour:
   m_ObjectHideFlags: 0
