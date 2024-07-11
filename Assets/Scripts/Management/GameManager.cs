@@ -18,6 +18,8 @@ public class GameManager : Singleton<GameManager>
         base.Awake();
 
         DisableScreen();
+
+        ChangeState(GameState.Gameplay);
     }
 
     public void ChangeState(GameState newState)

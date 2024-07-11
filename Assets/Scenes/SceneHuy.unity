@@ -8322,6 +8322,38 @@ PrefabInstance:
       propertyPath: m_Name
       value: PauseGame
       objectReference: {fileID: 0}
+    - target: {fileID: 5975992786147429364, guid: 4f6767cc886c8504a9b45f037a592032, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6362567443437092579, guid: 4f6767cc886c8504a9b45f037a592032, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6362567443437092579, guid: 4f6767cc886c8504a9b45f037a592032, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6362567443437092579, guid: 4f6767cc886c8504a9b45f037a592032, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1947436322}
+    - target: {fileID: 6362567443437092579, guid: 4f6767cc886c8504a9b45f037a592032, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6362567443437092579, guid: 4f6767cc886c8504a9b45f037a592032, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: ResumeGame
+      objectReference: {fileID: 0}
+    - target: {fileID: 6362567443437092579, guid: 4f6767cc886c8504a9b45f037a592032, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: GameManager, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 6362567443437092579, guid: 4f6767cc886c8504a9b45f037a592032, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 7454263939537014287, guid: 4f6767cc886c8504a9b45f037a592032, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -8875,6 +8907,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 38470470765175328, guid: 52767dcfc4ee14942a2de9cee118de2b, type: 3}
   m_PrefabInstance: {fileID: 31330495}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1947436322 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8924464095425790701, guid: 3395bc508195ba44b9015f8323dc5662, type: 3}
+  m_PrefabInstance: {fileID: 1696600384}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b1b821062680d474b9a27f1cd8a80ee8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2013220176 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5975992786147429364, guid: 4f6767cc886c8504a9b45f037a592032, type: 3}
