@@ -88,7 +88,7 @@ public class GameManager : Singleton<GameManager>
         FileStream fileStream = File.Create(savePath);
 
         // Serialize the game object and write it to the file
-        formatter.Serialize(fileStream, gameObjectToSave);
+        formatter.Serialize(fileStream, JsonUtility.ToJson(gameObjectToSave, true));
 
         // Close the file stream
         fileStream.Close();
