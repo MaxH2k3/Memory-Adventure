@@ -80,49 +80,18 @@ public class GameManager : Singleton<GameManager>
     // Function to save the game
     public void SaveGame()
     {
-        // Create a binary formatter to serialize the object
-        BinaryFormatter formatter = new BinaryFormatter();
-
-        // Create a file to save the serialized data
-        string savePath = Application.persistentDataPath + "/savegame.dat";
-        FileStream fileStream = File.Create(savePath);
-
-        // Serialize the game object and write it to the file
-        formatter.Serialize(fileStream, JsonUtility.ToJson(gameObjectToSave, true));
-
-        // Close the file stream
-        fileStream.Close();
-
-        Debug.Log("Game saved!");
+        DataManagement.Instance.SaveGame();   
     }
 
     // Function to load the saved game
     public void LoadGame()
     {
-        // Check if the save file exists
-        string savePath = Application.persistentDataPath + "/savegame.dat";
-        if (File.Exists(savePath))
-        {
-            // Create a binary formatter to deserialize the object
-            BinaryFormatter formatter = new BinaryFormatter();
+        DataManagement.Instance.LoadGame();
+    }
 
-            // Open the save file
-            FileStream fileStream = File.Open(savePath, FileMode.Open);
-
-            // Deserialize the game object from the file
-            GameObject loadedGameObject = (GameObject)formatter.Deserialize(fileStream);
-
-            // Close the file stream
-            fileStream.Close();
-
-            // Instantiate the loaded game object in the scene
-            Instantiate(loadedGameObject);
-
-            Debug.Log("Game loaded!");
-        } else
-        {
-            Debug.Log("No save file found!");
-        }
+    public void NewGame()
+    {
+        DataManagement.Instance.NewGame();
     }
 
     public void DisableScreen()
