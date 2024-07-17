@@ -73,6 +73,7 @@ public class PlayerHealth : Singleton<PlayerHealth>, IDataManagement
     {
         // If the player can't take damage, return
         if (!canTakeDamage) return;
+        ScreenShakeManager.Instance.ShakeScreen();
         // Knock back the player
         knockBack.GetKnockBack(hitTransform, knockBackThrust);
         // Flash the player
