@@ -20,6 +20,8 @@ public class AreaExit : MonoBehaviour
             if(other.gameObject.GetComponent<PlayerController>())
             {
                 //ceneManagement.LoadScene(sceneToLoad);
+                //LoadSceneRoutine();
+                SceneManager.LoadScene(sceneToLoad);
                 SceneManagement.Instance.SetTransitionName(sceneTransitionName);
             }
         }
