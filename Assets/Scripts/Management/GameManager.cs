@@ -6,7 +6,7 @@ using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.SceneManagement;
 
-public class GameManager : Singleton<GameManager>
+public class GameManager : Singleton<GameManager>, IDataManagement
 {
     [SerializeField]
     private GameState currentState;
@@ -16,9 +16,11 @@ public class GameManager : Singleton<GameManager>
     [SerializeField]
     private GameObject pauseScreen;
 
-    // Reference to the game object you want to save
     [SerializeField]
-    private GameObject gameObjectToSave;
+    public GameObject ResumeButton;
+
+    [SerializeField]
+    public GameObject RestartButton;
 
     private new void Awake()
     {
@@ -32,6 +34,16 @@ public class GameManager : Singleton<GameManager>
     public void ChangeState(GameState newState)
     {
         currentState = newState;
+    }
+
+    public void OnPlayerDeath()
+    {
+        ResumeButton.SetActive(false);
+        RestartButton.SetActive(true);
+
+        ChangeState(GameState.Paused);
+        pauseScreen.SetActive(true);
+        PlayerController.Instance.canMove = false;
     }
 
     public void PauseGame()
@@ -77,25 +89,21 @@ public class GameManager : Singleton<GameManager>
         }
     }
 
-    // Function to save the game
-    public void SaveGame()
-    {
-        DataManagement.Instance.SaveGame();   
-    }
-
-    // Function to load the saved game
-    public void LoadGame()
-    {
-        DataManagement.Instance.LoadGame();
-    }
-
-    public void NewGame()
-    {
-        DataManagement.Instance.NewGame();
-    }
-
     public void DisableScreen()
     {
         pauseScreen.SetActive(false);
+    }
+
+    public void LoadData(GameData gameData)
+    {
+        if(SceneManager.GetActiveScene().buildIndex != gameData.Scence)
+        {
+            SceneManager.LoadScene(gameData.Scence);
+        }
+    }
+
+    public void SaveData(ref GameData gameData)
+    {
+        gameData.Scence = SceneManager.GetActiveScene().buildIndex;
     }
 }

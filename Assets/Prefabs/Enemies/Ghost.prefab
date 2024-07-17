@@ -20,7 +20,7 @@ GameObject:
   - component: {fileID: 4337039563864207299}
   - component: {fileID: 1322673278246644163}
   - component: {fileID: 1699434054114242075}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Ghost
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -289,7 +289,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6488860448957424199}
   - component: {fileID: 4240570984995922269}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Shadows_Sheet_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}

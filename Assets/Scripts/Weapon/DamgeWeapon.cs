@@ -20,12 +20,21 @@ public class DamgeWeapon : MonoBehaviour
     {
         var enemyHealth = collision.gameObject.GetComponent<EnemyHealth>();
         var bossHealth = collision.gameObject.GetComponent<BossHealth>();
+        var deathEnemyHealth = collision.gameObject.GetComponent<DeathEnemy>();
+        var deathSummonHealth = collision.gameObject.GetComponent<DeathSummon>();
+
         if (enemyHealth)
         {
             enemyHealth.TakeDamage(damageAmount);
         } else if(bossHealth)
         {
             bossHealth.TakeDamage(damageAmount);
+        } else if(deathEnemyHealth)
+        {
+            deathEnemyHealth.OnHit(damageAmount);
+        } else if (deathSummonHealth)
+        {
+            deathSummonHealth.OnHit();
         }
         
     }

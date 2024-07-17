@@ -5,10 +5,16 @@ using UnityEngine;
 [System.Serializable]
 public class GameData
 {
-    public int deathCount;
+    public int Health;
+    public int Gold;
+    public Vector3 PlayerPosition;
+    public int Scence;
 
     public GameData()
     {
-        this.deathCount = 0;
+        this.Health = PlayerController.Instance.playerState.health;
+        this.Gold = EconomyManager.Instance.currentGold;
+        this.PlayerPosition = PlayerController.Instance.transform.position;
+        this.Scence = 1;
     }
 }

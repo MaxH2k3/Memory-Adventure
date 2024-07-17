@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using UnityEditor.U2D;
 using UnityEngine;
 
-public class PlayerController : Singleton<PlayerController>
+public class PlayerController : Singleton<PlayerController>, IDataManagement
 {
     [SerializeField] private float moveSpeed = 1f;
     [SerializeField] private float boostSpeed = 1.7f;
@@ -175,6 +175,17 @@ public class PlayerController : Singleton<PlayerController>
         // Chờ một khoảng thời gian dashCD trước khi cho phép Dash tiếp
         yield return new WaitForSeconds(dashCD);
         isBoosting = false;
+    }
+
+    public void LoadData(GameData gameData)
+    {
+        this.transform.position = gameData.PlayerPosition;
+
+    }
+
+    public void SaveData(ref GameData gameData)
+    {
+        gameData.PlayerPosition = this.transform.position;
     }
 
 }

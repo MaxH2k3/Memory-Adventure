@@ -8,5 +8,5 @@ public class PlayerState : ScriptableObject
     public int health;
     public float moveSpeed;
     public int strength;
-    public float attackSpeed;
+    public int gold;
 }

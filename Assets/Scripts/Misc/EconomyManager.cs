@@ -3,10 +3,10 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 
-public class EconomyManager : Singleton<EconomyManager>
+public class EconomyManager : Singleton<EconomyManager>, IDataManagement
 {
     private TMP_Text goldText;
-    private int currentGold = 0;
+    public int currentGold = 0;
 
     const string COIN_AMOUNT_TEXT = "Gold Amount Text";
 
@@ -20,5 +20,23 @@ public class EconomyManager : Singleton<EconomyManager>
         }
 
         goldText.text = currentGold.ToString("D3");
+    }
+
+    public void LoadData(GameData gameData)
+    {
+        this.currentGold = gameData.Gold;
+
+        if (goldText == null)
+        {
+            goldText = GameObject.Find(COIN_AMOUNT_TEXT).GetComponent<TMP_Text>();
+
+        }
+
+        goldText.text = currentGold.ToString("D3");
+    }
+
+    public void SaveData(ref GameData gameData)
+    {
+        gameData.Gold = this.currentGold;
     }
 }

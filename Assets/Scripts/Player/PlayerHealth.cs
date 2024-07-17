@@ -4,10 +4,9 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
-public class PlayerHealth : Singleton<PlayerHealth>
+public class PlayerHealth : Singleton<PlayerHealth>, IDataManagement
 {
     public bool isDead {  get; private set; }
-    [SerializeField] private int health = 5;
     [SerializeField] private float knockBackThrust = 15f; //xác định mức đẩy lùi khi kẻ địch bị tấn công. 
     [SerializeField] private float damgeRecoveryTime = 3f; //xác định thời gian hồi phục sau khi bị tấn công.
     
@@ -19,7 +18,7 @@ public class PlayerHealth : Singleton<PlayerHealth>
     private bool canTakeDamage = true; //determine if the player can take damage
 
     const string HEALTH_SLIDER_TEXT = "Health Slider";
-    const string TOWN_TEXT = "Scene 1";
+    const string TOWN_TEXT = "Scene2";
     readonly int DEATH_HASH = Animator.StringToHash("Death");
 
     protected override void Awake()
@@ -32,7 +31,7 @@ public class PlayerHealth : Singleton<PlayerHealth>
     private void Start()
     {
         isDead = false;
-        currentHealth = health;
+        currentHealth = PlayerController.Instance.playerState.health;
         UpdateHealthSlider();
     }
 
@@ -87,7 +86,7 @@ public class PlayerHealth : Singleton<PlayerHealth>
     
     public void HealPlayer(int amount)
     {
-        if(currentHealth < health)
+        if(currentHealth < PlayerController.Instance.playerState.health)
         {
             currentHealth += amount;
         }
@@ -114,7 +113,8 @@ public class PlayerHealth : Singleton<PlayerHealth>
             Destroy(ActiveWeapon.Instance.gameObject);
             currentHealth = 0;
             GetComponent<Animator>().SetTrigger(DEATH_HASH);
-            StartCoroutine(DeathLoadSceneRoutine());
+            //StartCoroutine(DeathLoadSceneRoutine());
+            GameManager.Instance.OnPlayerDeath();
         }
     }
 
@@ -138,8 +138,18 @@ public class PlayerHealth : Singleton<PlayerHealth>
             healthSlider = GameObject.Find("Health Slider").GetComponent<Slider>();
         }
 
-        healthSlider.maxValue = health;
+        healthSlider.maxValue = PlayerController.Instance.playerState.health;
         healthSlider.value = currentHealth;
     }
 
+    public void LoadData(GameData gameData)
+    {
+        this.currentHealth = gameData.Health;
+        UpdateHealthSlider();
+    }
+
+    public void SaveData(ref GameData gameData)
+    {
+        gameData.Health = this.currentHealth;
+    }
 }
