@@ -30,7 +30,15 @@ public class DataManagement : MonoBehaviour
     {
         this.dataHandler = new FileDataHandler(Application.persistentDataPath, fileName);
         this.dataManagement = FindAllDataManagementObject();
-        LoadGame();
+        if(FlagGame.Instance.IsLoadGame)
+        {
+            LoadGame();
+            FlagGame.Instance.ResetFlag();
+        } else
+        {
+            NewGame();
+            FlagGame.Instance.ResetFlag();
+        }
     }
 
     public void NewGame()

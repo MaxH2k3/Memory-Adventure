@@ -22,6 +22,8 @@ public class GameManager : Singleton<GameManager>, IDataManagement
     [SerializeField]
     public GameObject RestartButton;
 
+    private readonly bool IsLoading = true;
+
     private new void Awake()
     {
         base.Awake();
@@ -75,6 +77,11 @@ public class GameManager : Singleton<GameManager>, IDataManagement
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 
+    public void OnApplicationQuit()
+    {
+        Application.Quit();
+    }
+
     public void OnPause(InputAction.CallbackContext context)
     {
         if (context.started && (currentState == GameState.Paused || currentState == GameState.Gameplay))
@@ -96,14 +103,16 @@ public class GameManager : Singleton<GameManager>, IDataManagement
 
     public void LoadData(GameData gameData)
     {
-        if(SceneManager.GetActiveScene().buildIndex != gameData.Scence)
+        if (FlagGame.Instance.IsLoadScene)
         {
             SceneManager.LoadScene(gameData.Scence);
+            FlagGame.Instance.IsLoadScene = false;
         }
     }
 
     public void SaveData(ref GameData gameData)
     {
+        //gameData.Scence = SceneManager.GetActiveScene().buildIndex;
         gameData.Scence = SceneManager.GetActiveScene().buildIndex;
     }
 }

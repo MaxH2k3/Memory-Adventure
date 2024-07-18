@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using System.IO;
+using System;
 
 public class MenuController : MonoBehaviour
 {
@@ -11,14 +13,27 @@ public class MenuController : MonoBehaviour
 
     public void loadGameDialogYes()
     {
-        if (PlayerPrefs.HasKey("SavedLevel"))
+        if (IsGameSaved())
         {
-            levelToLoad = PlayerPrefs.GetString("SavedLevel");
-            SceneManager.LoadScene(levelToLoad);
+            SceneManager.LoadScene(1);
         }
         else
         {
             noSavedGameDialog.SetActive(true);
         }
+    }
+
+    private bool IsGameSaved()
+    {
+        var dataDirPath = Application.persistentDataPath;
+        var dataFileName = "data.game";
+        string fullPath = Path.Combine(dataDirPath, dataFileName);
+
+        if (File.Exists(fullPath))
+        {
+            return true;
+        }
+
+        return false;
     }
 }

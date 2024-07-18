@@ -11,13 +11,14 @@ public class Sword : MonoBehaviour, IWeapon
     private Transform weaponCollider; // This is the collider of the weapon
     private Animator animator;
     private GameObject slashAnimation; // This is the instantiated slash animation
-    
+    private AudioManager audioManager;
 
     public WeaponInfo GetWeaponInfo() => weaponInfo;
 
     private void Awake()
     {
         animator = GetComponent<Animator>();
+        audioManager = GameObject.FindGameObjectWithTag("Audio").GetComponent<AudioManager>();
     }
 
     public void Start()
@@ -35,6 +36,7 @@ public class Sword : MonoBehaviour, IWeapon
 
     public void Attack()
     {
+        audioManager.PlaySFX(audioManager.SwordSlash);
         animator.SetTrigger("Attack"); // trigger the attack animation
         weaponCollider.gameObject.SetActive(true); // enable the weapon collider which allows weapons to collide with other objects in the game
 

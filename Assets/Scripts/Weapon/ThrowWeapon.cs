@@ -13,9 +13,12 @@ public class ThrowWeapon : MonoBehaviour
     private Rigidbody2D rb;
     private bool isReturning = false;
 
+    private AudioManager audioManager;
+
     private void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
+        audioManager = GameObject.FindGameObjectWithTag("Audio").GetComponent<AudioManager>();
     }
 
     private void Start()
@@ -75,6 +78,7 @@ public class ThrowWeapon : MonoBehaviour
             // Set the player's weapon to active
             ActiveWeapon.Instance.gameObject.SetActive(true);
             ActiveWeapon.Instance.isAttacking = false;
+            audioManager.StopSFX();
         }
     }
 

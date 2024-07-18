@@ -11,5 +11,6 @@ public class NewGameButton : MonoBehaviour
     public void StartGame()
     {
         SceneManager.LoadScene(GameStartScene);
+        FlagGame.Instance.IsLoadGame = false;
     }
 }

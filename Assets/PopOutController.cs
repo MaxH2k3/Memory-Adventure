@@ -6,20 +6,11 @@ using UnityEngine.SceneManagement;
 public class PopOutController : MonoBehaviour
 {
     public int MenuScene;
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 
     public void GoToMainMenu()
     {
+        GameManager.Instance.ResumeGame();
+        AudioManager.Instance.StopBackgroundMusic();
         SceneManager.LoadScene(MenuScene);
     }
 
