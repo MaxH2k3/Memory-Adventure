@@ -296,12 +296,12 @@ MonoBehaviour:
   summonTimer: 5
   attackZone: {fileID: 8970024639060435935}
   isFaceleft: 1
-  _maxHealth: 3
-  _health: 12
+  _maxHealth: 10
+  _health: 10
   _isAlive: 1
   isInvincible: 0
   invincibilityTime: 0.25
-  hitProbability: 100
+  hitProbability: 70
 --- !u!1 &7420814107682356959
 GameObject:
   m_ObjectHideFlags: 0

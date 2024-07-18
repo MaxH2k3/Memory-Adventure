@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections;
-using System.Collections.Generic;
-using UnityEditor.U2D;
+﻿using System.Collections;
 using UnityEngine;
 
 public class PlayerController : Singleton<PlayerController>, IDataManagement

@@ -2150,6 +2150,7 @@ GameObject:
   - component: {fileID: 8462848624362377395}
   - component: {fileID: 4267288220064631033}
   - component: {fileID: 729947161731826348}
+  - component: {fileID: 1734655044633042952}
   m_Layer: 5
   m_Name: Quit_Save
   m_TagString: Untagged
@@ -2259,8 +2260,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: PopOutController, Assembly-CSharp
+      - m_Target: {fileID: 1734655044633042952}
+        m_TargetAssemblyTypeName: QuitGameButton, Assembly-CSharp
         m_MethodName: QuitGame
         m_Mode: 1
         m_Arguments:
@@ -2271,6 +2272,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &1734655044633042952
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3882194133958933621}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3698c8c781cf07e408451ff2173e9cd4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &3910110785797878455
 GameObject:
   m_ObjectHideFlags: 0
